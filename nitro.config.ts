@@ -1,4 +1,4 @@
-import { defineNitroConfig } from 'nitropack'
+import { defineNitroConfig } from "nitropack";
 export default defineNitroConfig({
-    srcDir: "./src"
-})
+  srcDir: "./src",
+});

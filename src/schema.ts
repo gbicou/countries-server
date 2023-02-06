@@ -8,38 +8,38 @@ const builder = new SchemaBuilder({});
 const Country = builder.objectRef<ISO_3166_1_Record>("Country");
 
 builder.objectType(Country, {
-    description: "A country record",
-    fields: (t) => ({
-        code: t.exposeString("alpha2", { description: "ISO code" }),
-        name: t.exposeString("name", { description: "Name of country" }),
-        alpha3: t.exposeString("alpha3", { description: "Alpha‑3 code" }),
-        numeric: t.exposeString("numeric", { description: "Numeric" }),
-    }),
+  description: "A country record",
+  fields: (t) => ({
+    code: t.exposeString("alpha2", { description: "ISO code" }),
+    name: t.exposeString("name", { description: "Name of country" }),
+    alpha3: t.exposeString("alpha3", { description: "Alpha‑3 code" }),
+    numeric: t.exposeString("numeric", { description: "Numeric" }),
+  }),
 });
 
 builder.queryType({
-    fields: (t) => ({
-        version: t.string({
-            description: "Package version",
-            resolve: () => version,
-        }),
-        countries: t.field({
-            type: [Country],
-            description: "All countries",
-            resolve: () => records,
-        }),
-        country: t.field({
-            type: Country,
-            description: "Country by code",
-            nullable: true,
-            args: {
-                code: t.arg.string({
-                    required: true,
-                }),
-            },
-            resolve: (_, { code }) => findByAlpha2(code),
-        }),
+  fields: (t) => ({
+    version: t.string({
+      description: "Package version",
+      resolve: () => version,
     }),
+    countries: t.field({
+      type: [Country],
+      description: "All countries",
+      resolve: () => records,
+    }),
+    country: t.field({
+      type: Country,
+      description: "Country by code",
+      nullable: true,
+      args: {
+        code: t.arg.string({
+          required: true,
+        }),
+      },
+      resolve: (_, { code }) => findByAlpha2(code),
+    }),
+  }),
 });
 
 export const schema = builder.toSchema();

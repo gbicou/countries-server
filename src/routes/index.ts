@@ -1,10 +1,10 @@
-import { createYoga } from 'graphql-yoga';
+import { createYoga } from "graphql-yoga";
 import { schema } from "../schema";
 
 // Create a Yoga instance with a GraphQL schema.
 const yoga = createYoga({
-    schema,
-    graphqlEndpoint: '/'
+  schema,
+  graphqlEndpoint: "/",
 });
 
-export default defineEventHandler((event) => yoga.handle(event.node.req, event.node.res))
+export default defineEventHandler((event) => yoga.handle(event.node.req, event.node.res));
