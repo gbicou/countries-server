@@ -1,0 +1,26 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+    query: Query
+}
+
+"A country record"
+type Country {
+    "Alpha‑3 code"
+    alpha3: String!
+    "ISO code"
+    code: String!
+    "Name of country"
+    name: String!
+    "Numeric"
+    numeric: String!
+}
+
+type Query {
+    "All countries"
+    countries: [Country!]!
+    "Country by code"
+    country(code: String!): Country
+    "Package version"
+    version: String!
+}
