@@ -9,8 +9,7 @@ const yoga = createYoga({
 });
 
 // Pass it into a server to hook into request handlers.
-// eslint-disable-next-line @typescript-eslint/no-misused-promises
-const server = createServer(yoga);
+const server = createServer(yoga.requestListener);
 
 const port = Number(process.env.PORT) || 4000;
 
