@@ -17,9 +17,9 @@
   "type": "module",
   "scripts": {
     "postinstall": "nitro prepare",
-    "dev": "PORT=4000 nitro dev",
+    "dev": "nitro dev",
     "build": "nitro build",
-    "start": "PORT=4000 node .output/server/index.mjs",
+    "start": "node .output/server/index.mjs",
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
