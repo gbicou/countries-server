@@ -4,6 +4,20 @@
   Country: string;
   "ISO-Numeric": string;
   tld: string;
+  fips: string;
+  Capital: string;
+  "Area(in sq km)": string;
+  Population: string;
+  Continent: string;
+  CurrencyCode: string;
+  CurrencyName: string;
+  Phone: string;
+  "Postal Code Format": string;
+  "Postal Code Regex": string;
+  Languages: string;
+  geonameid: string;
+  neighbours: string;
+  EquivalentFipsCode: string;
 }
 
 export const countries: GeoCountry[] = [
