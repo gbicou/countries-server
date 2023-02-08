@@ -1,15 +1,7 @@
 import SchemaBuilder from "@pothos/core";
 import { version } from "../package.json";
 import { GraphQLSchema } from "graphql";
-// @ts-ignore
-import geo from "../countryInfo.tsv";
-
-interface GeoCountry {
-  ISO: string;
-  ISO3: string;
-  Country: string;
-  "ISO-Numeric": string;
-}
+import { countries, GeoCountry } from "./geonames";
 
 // build schema with pothos
 const builder = new SchemaBuilder({});
@@ -23,6 +15,7 @@ builder.objectType(Country, {
     name: t.exposeString("Country", { description: "Name of country" }),
     alpha3: t.exposeString("ISO3", { description: "Alpha‑3 code" }),
     numeric: t.exposeString("ISO-Numeric", { description: "Numeric" }),
+    tld: t.exposeString("tld"),
   }),
 });
 
@@ -35,7 +28,7 @@ builder.queryType({
     countries: t.field({
       type: [Country],
       description: "All countries",
-      resolve: () => geo as GeoCountry[],
+      resolve: () => countries,
     }),
     country: t.field({
       type: Country,
@@ -46,7 +39,7 @@ builder.queryType({
           required: true,
         }),
       },
-      resolve: (_, { code }) => (geo as GeoCountry[]).find((c) => c.ISO == code),
+      resolve: (_, { code }) => countries.find((c) => c.ISO == code),
     }),
   }),
 });
