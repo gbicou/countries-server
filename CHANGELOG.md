@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/gbicou/countries-server/compare/v1.1.0...v1.2.0) (2023-02-08)
+
+
+### Features
+
+* **graphql:** neighbours field for country ([6d9ff11](https://github.com/gbicou/countries-server/commit/6d9ff1173dc345833b31c7a1db588b9b3f0c6b33))
+
 # [1.1.0](https://github.com/gbicou/countries-server/compare/v1.0.1...v1.1.0) (2023-02-08)
 
 
