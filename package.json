@@ -27,9 +27,9 @@
     "dist"
   ],
   "scripts": {
-    "postinstall": "nitro prepare",
+    "pre": "nitro prepare",
     "dev": "nitro dev",
-    "build": "nitro build",
+    "build": "nitro prepare && nitro build",
     "unbuild": "unbuild",
     "start": "node .output/server/index.mjs",
     "lint": "eslint .",
