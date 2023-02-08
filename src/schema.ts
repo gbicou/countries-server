@@ -1,20 +1,28 @@
 import SchemaBuilder from "@pothos/core";
 import { version } from "../package.json";
-import { records, findByAlpha2, type ISO_3166_1_Record } from "iso-3166-1-ts";
 import { GraphQLSchema } from "graphql";
+// @ts-ignore
+import geo from "../countryInfo.tsv";
+
+interface GeoCountry {
+  ISO: string;
+  ISO3: string;
+  Country: string;
+  "ISO-Numeric": string;
+}
 
 // build schema with pothos
 const builder = new SchemaBuilder({});
 
-const Country = builder.objectRef<ISO_3166_1_Record>("Country");
+const Country = builder.objectRef<GeoCountry>("Country");
 
 builder.objectType(Country, {
   description: "A country record",
   fields: (t) => ({
-    code: t.exposeString("alpha2", { description: "ISO code" }),
-    name: t.exposeString("name", { description: "Name of country" }),
-    alpha3: t.exposeString("alpha3", { description: "Alpha‑3 code" }),
-    numeric: t.exposeString("numeric", { description: "Numeric" }),
+    code: t.exposeString("ISO", { description: "ISO code" }),
+    name: t.exposeString("Country", { description: "Name of country" }),
+    alpha3: t.exposeString("ISO3", { description: "Alpha‑3 code" }),
+    numeric: t.exposeString("ISO-Numeric", { description: "Numeric" }),
   }),
 });
 
@@ -27,7 +35,7 @@ builder.queryType({
     countries: t.field({
       type: [Country],
       description: "All countries",
-      resolve: () => records,
+      resolve: () => geo as GeoCountry[],
     }),
     country: t.field({
       type: Country,
@@ -38,7 +46,7 @@ builder.queryType({
           required: true,
         }),
       },
-      resolve: (_, { code }) => findByAlpha2(code),
+      resolve: (_, { code }) => (geo as GeoCountry[]).find((c) => c.ISO == code),
     }),
   }),
 });
