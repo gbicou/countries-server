@@ -16,6 +16,14 @@ builder.objectType(Country, {
     alpha3: t.exposeString("ISO3", { description: "Alpha‑3 code" }),
     numeric: t.exposeString("ISO-Numeric", { description: "Numeric" }),
     tld: t.exposeString("tld"),
+    neighbours: t.field({
+      type: [Country],
+      description: "Neighbours countries",
+      resolve: (parent) => {
+        const ids = parent.neighbours.split(",");
+        return countries.filter((c) => ids.includes(c.ISO));
+      },
+    }),
   }),
 });
 
