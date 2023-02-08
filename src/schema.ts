@@ -1,6 +1,7 @@
 import SchemaBuilder from "@pothos/core";
 import { version } from "../package.json";
 import { records, findByAlpha2, type ISO_3166_1_Record } from "iso-3166-1-ts";
+import { GraphQLSchema } from "graphql";
 
 // build schema with pothos
 const builder = new SchemaBuilder({});
@@ -42,4 +43,4 @@ builder.queryType({
   }),
 });
 
-export const schema = builder.toSchema();
+export const schema: GraphQLSchema = builder.toSchema();

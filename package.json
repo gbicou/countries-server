@@ -15,17 +15,28 @@
   "license": "MIT",
   "repository": "github:gbicou/countries-server",
   "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "postinstall": "nitro prepare",
     "dev": "nitro dev",
     "build": "nitro build",
+    "unbuild": "unbuild",
     "start": "node .output/server/index.mjs",
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@pothos/core": "^3.24.1",
-    "graphql": "^16.6.0",
+    "@pothos/core": "^3.25.0",
     "graphql-yoga": "^3.5.1",
     "iso-3166-1-ts": "^0.2.2"
   },
@@ -36,9 +47,18 @@
     "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unicorn": "^45.0.2",
+    "graphql": "^16.6.0",
     "h3": "^1.2.1",
     "nitropack": "^2.1.2",
-    "prettier": "^2.8.3",
-    "typescript": "^4.9.5"
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5",
+    "unbuild": "^1.1.1"
+  },
+  "peerDependencies": {
+    "graphql": "^16.6.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
