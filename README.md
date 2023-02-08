@@ -15,3 +15,7 @@ GraphQL countries server playground
 ## Production
 
 https://countries.bicou.com/
+
+## Package
+
+`@bicou/countries-server` exports the graphql schema
