@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/gbicou/countries-server/compare/v1.0.0...v1.0.1) (2023-02-08)
+
+
+### Bug Fixes
+
+* **package:** nitro prepare for build only ([7e219ea](https://github.com/gbicou/countries-server/commit/7e219ea127403e87e1698b6ff2073c5f62c52f93))
+
 # 1.0.0 (2023-02-08)
 
 
