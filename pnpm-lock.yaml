@@ -13,8 +13,8 @@ specifiers:
   eslint-plugin-unicorn: ^45.0.2
   graphql: ^16.6.0
   graphql-yoga: ^3.5.1
-  h3: ^1.2.1
-  nitropack: ^2.1.2
+  h3: ^1.4.0
+  nitropack: ^2.2.1
   prettier: ^2.8.4
   semantic-release: ^20.1.0
   typescript: ^4.9.5
@@ -35,8 +35,8 @@ devDependencies:
   eslint-plugin-prettier: 4.2.1_qa2thblfovmfepmgrc7z2owbo4
   eslint-plugin-unicorn: 45.0.2_eslint@8.33.0
   graphql: 16.6.0
-  h3: 1.2.1
-  nitropack: 2.1.2
+  h3: 1.4.0
+  nitropack: 2.2.1
   prettier: 2.8.4
   semantic-release: 20.1.0
   typescript: 4.9.5
@@ -1827,7 +1827,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001451
-      electron-to-chromium: 1.4.289
+      electron-to-chromium: 1.4.292
       node-releases: 2.0.10
       update-browserslist-db: 1.0.10_browserslist@4.21.5
     dev: true
@@ -1865,7 +1865,7 @@ packages:
       defu: 6.1.2
       dotenv: 16.0.3
       giget: 1.0.0
-      jiti: 1.16.2
+      jiti: 1.17.0
       mlly: 1.1.0
       pathe: 1.1.0
       pkg-types: 1.0.1
@@ -2333,8 +2333,8 @@ packages:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
     dev: true
 
-  /electron-to-chromium/1.4.289:
-    resolution: {integrity: sha512-relLdMfPBxqGCxy7Gyfm1HcbRPcFUJdlgnCPVgQ23sr1TvUrRJz0/QPoGP0+x41wOVSTN/Wi3w6YDgHiHJGOzg==}
+  /electron-to-chromium/1.4.292:
+    resolution: {integrity: sha512-ESWOSyJy5odDlE8wvh5NNAMORv4r6assPwIPGHEMWrWD0SONXcG/xT+9aD9CQyeRwyYDPo6dJT4Bbeg5uevVQQ==}
     dev: true
 
   /emoji-regex/8.0.0:
@@ -2763,7 +2763,7 @@ packages:
     resolution: {integrity: sha512-v2ZsoEuVHYy8ZIlYqwPe/39Cy+cFDzp4dXPaxNvkEuouymu+2Jbz0PxpKarJHYJTmv2HWT3O382qY8l4jMWthw==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
-      locate-path: 7.1.1
+      locate-path: 7.2.0
       path-exists: 5.0.0
     dev: true
 
@@ -3020,11 +3020,12 @@ packages:
       duplexer: 0.1.2
     dev: true
 
-  /h3/1.2.1:
-    resolution: {integrity: sha512-uYRENV7pNd4kl4nGFDkVOZRZgDVmH4Ur4h64QAsqPsHj1jxI6MAU+7xT0JX9Tg3iKbmgMPpRf8QI6e4CJZ12MQ==}
+  /h3/1.4.0:
+    resolution: {integrity: sha512-FWG+FUdW6XQnf/54L4AXzZs1KUYwSJk5cbdFvTM4EG96bEQiWDJ5003xW4S3UGgXI0VJJgyY6KCaDmAL75kjbA==}
     dependencies:
       cookie-es: 0.5.0
       destr: 1.2.2
+      iron-webcrypto: 0.4.0
       radix3: 1.0.0
       ufo: 1.0.1
       uncrypto: 0.1.2
@@ -3236,6 +3237,10 @@ packages:
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dev: true
 
+  /iron-webcrypto/0.4.0:
+    resolution: {integrity: sha512-5OG53gJ4dBTq4y3IJqK7MEG9CPZRsYn9EP9J4jjgH4TcP/ywdsSMAmqj9VTSzdXu0/xfUrqjGHU7WLUme2+k5Q==}
+    dev: true
+
   /is-arrayish/0.2.1:
     resolution: {integrity: sha512-zz06S8t0ozoDXMG+ube26zeCTNXcKIPJZJi8hBrF4idCLms4CG9QtK7qBl1boi5ODzFpjswb5JPmHCbMpjaYzg==}
     dev: true
@@ -3384,8 +3389,8 @@ packages:
     engines: {node: '>= 0.6.0'}
     dev: true
 
-  /jiti/1.16.2:
-    resolution: {integrity: sha512-OKBOVWmU3FxDt/UH4zSwiKPuc1nihFZiOD722FuJlngvLz2glX1v2/TJIgoA4+mrpnXxHV6dSAoCvPcYQtoG5A==}
+  /jiti/1.17.0:
+    resolution: {integrity: sha512-CByzPgFqYoB9odEeef7GNmQ3S5THIBOtzRYoSCya2Sv27AuQxy2jgoFjQ6VTF53xsq1MXRm+YWNvOoDHUAteOw==}
     hasBin: true
     dev: true
 
@@ -3551,8 +3556,8 @@ packages:
       p-locate: 5.0.0
     dev: true
 
-  /locate-path/7.1.1:
-    resolution: {integrity: sha512-vJXaRMJgRVD3+cUZs3Mncj2mxpt5mP0EmNOsxRSZRMlbqjvxzDEOIUWXGmavo0ZC9+tNZCBLQ66reA11nbpHZg==}
+  /locate-path/7.2.0:
+    resolution: {integrity: sha512-gvVijfZvn7R+2qyPX8mAuKcFGDf6Nc61GdvGafQsHL0sBIxfKzA+usWn4GFC/bk+QdwPUD4kWFJLhElipq+0VA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       p-locate: 6.0.0
@@ -3810,7 +3815,7 @@ packages:
       esbuild: 0.17.6
       fs-extra: 11.1.0
       globby: 13.1.3
-      jiti: 1.16.2
+      jiti: 1.17.0
       mri: 1.2.0
       pathe: 1.1.0
       typescript: 4.9.5
@@ -3863,8 +3868,8 @@ packages:
     resolution: {integrity: sha512-EZSPZB70jiVsivaBLYDCyntd5eH8NTSMOn3rB+HxwdmKThGELLdYv8qVIMWvZEFy9w8ZZpW9h9OB32l1rGtj7g==}
     dev: true
 
-  /nitropack/2.1.2:
-    resolution: {integrity: sha512-Z6hRUsvDI+tLFGmZugWukdatBc9eRyRTP1l5CqZg3CQWrDkr6fQb8nh2x8Zdp9UNqhoessrHiO/62pWsau3AUg==}
+  /nitropack/2.2.1:
+    resolution: {integrity: sha512-V7sYOqyNZFQ+Yp3S2Ks9VUiLDp7Fz3vdc4ULTAK+E0R5nMSq5MuoQZqH4BT0x8UHC30lo+fd3gXk2fCYzUft1g==}
     engines: {node: ^14.16.0 || ^16.11.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
     hasBin: true
     dependencies:
@@ -3895,11 +3900,11 @@ packages:
       fs-extra: 11.1.0
       globby: 13.1.3
       gzip-size: 7.0.0
-      h3: 1.2.1
+      h3: 1.4.0
       hookable: 5.4.2
       http-proxy: 1.18.1
       is-primitive: 3.0.1
-      jiti: 1.16.2
+      jiti: 1.17.0
       klona: 2.0.6
       knitwork: 1.0.0
       listhen: 1.0.2
@@ -3925,7 +3930,7 @@ packages:
       ufo: 1.0.1
       unenv: 1.1.1
       unimport: 2.2.4_rollup@3.14.0
-      unstorage: 1.1.3
+      unstorage: 1.1.4
     transitivePeerDependencies:
       - bufferutil
       - debug
@@ -4154,8 +4159,8 @@ packages:
       mimic-fn: 4.0.0
     dev: true
 
-  /open/8.4.0:
-    resolution: {integrity: sha512-XgFPPM+B28FtCCgSb9I+s9szOC1vZRSwgWsRUA5ylIxRTgKozqjOCrVOqGsYABPYK5qnfqClxZTFBa8PKt2v6Q==}
+  /open/8.4.1:
+    resolution: {integrity: sha512-/4b7qZNhv6Uhd7jjnREh1NjnPxlTq+XNWPG88Ydkj5AILcA5m3ajvcg57pB24EQjKv0dK62XnDqk9c/hkIG5Kg==}
     engines: {node: '>=12'}
     dependencies:
       define-lazy-prop: 2.0.0
@@ -4685,7 +4690,7 @@ packages:
       rollup:
         optional: true
     dependencies:
-      open: 8.4.0
+      open: 8.4.1
       picomatch: 2.3.1
       rollup: 3.14.0
       source-map: 0.7.4
@@ -5266,7 +5271,7 @@ packages:
       esbuild: 0.16.17
       globby: 13.1.3
       hookable: 5.4.2
-      jiti: 1.16.2
+      jiti: 1.17.0
       magic-string: 0.27.0
       mkdirp: 1.0.4
       mkdist: 1.1.1_typescript@4.9.5
@@ -5341,13 +5346,13 @@ packages:
       webpack-virtual-modules: 0.5.0
     dev: true
 
-  /unstorage/1.1.3:
-    resolution: {integrity: sha512-39GhA+Q/S53zEEnCdnAP6BpNFX5emGe65cK2LzOl84OVJKjlvtBGCZzRUSYZ1dZj2/01V4PKY5NCjDtZ3CG8dw==}
+  /unstorage/1.1.4:
+    resolution: {integrity: sha512-nrnCoWN8ewaZrwz5yf7QGkMn0FDoVer6yGIR56wvocNzAmZi1vXOnCaBxueB3Uu/SqNSH5N/ww41t6jNT8XccA==}
     dependencies:
       anymatch: 3.1.3
       chokidar: 3.5.3
       destr: 1.2.2
-      h3: 1.2.1
+      h3: 1.4.0
       ioredis: 5.3.0
       listhen: 1.0.2
       lru-cache: 7.14.1
