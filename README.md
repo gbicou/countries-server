@@ -10,7 +10,7 @@ GraphQL countries server playground
 
 | Role           | Name         | Link                                      |
 |----------------|--------------|-------------------------------------------|
-| database       | geonames     | http://www.geonames.org/  |
+| database       | geonames     | http://www.geonames.org/                  |
 | schema builder | Pothos       | https://pothos-graphql.dev/               |
 | graphql server | GraphQL Yoga | https://the-guild.dev/graphql/yoga-server |
 | js server      | Nitro        | https://nitro.unjs.io/                    |
