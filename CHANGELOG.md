@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/gbicou/countries-server/compare/v1.2.0...v1.2.1) (2023-05-03)
+
+
+### Bug Fixes
+
+* regenerate graphql schema ([bbbb01c](https://github.com/gbicou/countries-server/commit/bbbb01ce29c14d5405b1d4acd8496bf9a8307ce6))
+
 # [1.2.0](https://github.com/gbicou/countries-server/compare/v1.1.0...v1.2.0) (2023-02-08)
 
 
