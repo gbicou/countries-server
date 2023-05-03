@@ -9,12 +9,9 @@ dependencies:
     version: 3.8.0(graphql@16.6.0)
 
 devDependencies:
-  '@semantic-release/changelog':
-    specifier: ^6.0.3
-    version: 6.0.3(semantic-release@21.0.1)
-  '@semantic-release/git':
-    specifier: ^10.0.1
-    version: 10.0.1(semantic-release@21.0.1)
+  '@bicou/semantic-release':
+    specifier: ^1.0.1
+    version: 1.0.1
   '@types/node':
     specifier: ^18.15.11
     version: 18.15.11
@@ -266,6 +263,17 @@ packages:
       '@babel/helper-string-parser': 7.19.4
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
+    dev: true
+
+  /@bicou/semantic-release@1.0.1:
+    resolution: {integrity: sha512-1Bo4Gamj/0NoDkh2iypdZf9zCW4ClgiJSjDbkajD9B9AcsDy66UzwL7vq564qQJI7UobjQH6ZmLyAbcKdDeVMQ==}
+    dependencies:
+      '@semantic-release/changelog': 6.0.3(semantic-release@21.0.1)
+      '@semantic-release/git': 10.0.1(semantic-release@21.0.1)
+      semantic-release: 21.0.1
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
     dev: true
 
   /@cloudflare/kv-asset-handler@0.3.0:
