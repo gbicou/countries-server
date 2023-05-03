@@ -1,4 +1,4 @@
-# This file was generated based on ".graphqlconfig". Do not edit manually.
+# This file was generated. Do not edit manually.
 
 schema {
     query: Query
@@ -12,8 +12,11 @@ type Country {
     code: String!
     "Name of country"
     name: String!
+    "Neighbours countries"
+    neighbours: [Country!]!
     "Numeric"
     numeric: String!
+    tld: String!
 }
 
 type Query {
