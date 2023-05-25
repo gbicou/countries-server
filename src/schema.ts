@@ -28,6 +28,7 @@ builder.objectType(Country, {
 });
 
 builder.queryType({
+  description: "Queries",
   fields: (t) => ({
     version: t.string({
       description: "Package version",
