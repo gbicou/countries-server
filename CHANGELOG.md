@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/gbicou/countries-server/compare/v1.2.1...v1.2.2) (2023-05-25)
+
+
+### Bug Fixes
+
+* use ISO code as graphql ID ([2c632df](https://github.com/gbicou/countries-server/commit/2c632dfe9fae7279fbe1586b5f8713c76c055559))
+
 ## [1.2.1](https://github.com/gbicou/countries-server/compare/v1.2.0...v1.2.1) (2023-05-03)
 
 
