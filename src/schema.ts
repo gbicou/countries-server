@@ -11,7 +11,7 @@ const Country = builder.objectRef<GeoCountry>("Country");
 builder.objectType(Country, {
   description: "A country record",
   fields: (t) => ({
-    code: t.exposeString("ISO", { description: "ISO code" }),
+    code: t.exposeID("ISO", { description: "ISO code" }),
     name: t.exposeString("Country", { description: "Name of country" }),
     alpha3: t.exposeString("ISO3", { description: "Alpha‑3 code" }),
     numeric: t.exposeString("ISO-Numeric", { description: "Numeric" }),
@@ -43,7 +43,7 @@ builder.queryType({
       description: "Country by code",
       nullable: true,
       args: {
-        code: t.arg.string({
+        code: t.arg.id({
           required: true,
         }),
       },
