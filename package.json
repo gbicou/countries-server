@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@pothos/core": "^3.30.0",
-    "graphql-yoga": "^3.9.1"
+    "graphql-yoga": "^4.0.0"
   },
   "devDependencies": {
     "@bicou/semantic-release": "^1.0.1",
