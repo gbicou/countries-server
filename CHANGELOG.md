@@ -1,3 +1,11 @@
+## [1.3.3](https://github.com/gbicou/countries-server/compare/v1.3.2...v1.3.3) (2023-06-07)
+
+
+### Bug Fixes
+
+* **release:** docker metadata semver and pr ([52c247a](https://github.com/gbicou/countries-server/commit/52c247a34d4df7b44e2cda14ef9cb4eecea8024e))
+* **release:** publish to github container registry ([070520d](https://github.com/gbicou/countries-server/commit/070520d41d8bbd720e3c88734e131f1cfd881d05))
+
 ## [1.3.2](https://github.com/gbicou/countries-server/compare/v1.3.1...v1.3.2) (2023-06-07)
 
 
