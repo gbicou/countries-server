@@ -24,6 +24,10 @@ https://countries.bicou.com/
 
 `@bicou/countries-server` exports the graphql schema
 
+## Docker image
+
+`bicou/countries-server`
+
 <!-- Badges -->
 [npm-version-src]: https://img.shields.io/npm/v/@bicou/countries-server/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
 [npm-version-href]: https://npmjs.com/package/@bicou/countries-server
