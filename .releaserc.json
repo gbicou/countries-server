@@ -1,6 +1,3 @@
 {
-  "extends": ["@bicou/semantic-release"],
-  "plugins": [
-    "@codedependant/semantic-release-docker"
-  ]
+  "extends": ["@bicou/semantic-release"]
 }
