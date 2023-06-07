@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/gbicou/countries-server/compare/v1.3.1...v1.3.2) (2023-06-07)
+
+
+### Bug Fixes
+
+* **release:** publish to docker on release ([7594507](https://github.com/gbicou/countries-server/commit/7594507a3655ecc1006b99435b1f91c61dbc388c))
+
 ## [1.3.1](https://github.com/gbicou/countries-server/compare/v1.3.0...v1.3.1) (2023-06-07)
 
 
