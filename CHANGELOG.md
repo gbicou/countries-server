@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/gbicou/countries-server/compare/v1.3.0...v1.3.1) (2023-06-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency graphql-yoga to v4 ([60f5f69](https://github.com/gbicou/countries-server/commit/60f5f691b18f6fad023c7ad48b12a2b8c774a67f))
+
 ## [1.2.2](https://github.com/gbicou/countries-server/compare/v1.2.1...v1.2.2) (2023-05-25)
 
 
