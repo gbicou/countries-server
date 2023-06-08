@@ -14,7 +14,6 @@ WORKDIR /server
 USER nonroot
 
 ENV NITRO_SHUTDOWN=true
-ENV PORT=3030
 
-EXPOSE $PORT
+EXPOSE 3000
 CMD ["index.mjs"]
