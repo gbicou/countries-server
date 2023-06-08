@@ -1,8 +1,9 @@
-.dockerignore
 Dockerfile
+.dockerignore
 
 .git
 .github
+.gitignore
 
 .idea
 
