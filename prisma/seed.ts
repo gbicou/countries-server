@@ -20,6 +20,28 @@ async function main() {
     });
     console.log("upsert country", country.Country);
   }
+
+  for (const c of countries) {
+    const neighbours = c.neighbours.split(",").filter((n) => n.length);
+    if (neighbours.length > 0) {
+      console.log("update neighbours", c.ISO, neighbours);
+      await prisma.country.update({
+        where: {
+          code: c.ISO,
+        },
+        data: {
+          neighbours: {
+            connect: neighbours.map((n) => ({
+              code: n,
+            })),
+          },
+        },
+        include: {
+          neighbours: true,
+        },
+      });
+    }
+  }
 }
 
 await main();

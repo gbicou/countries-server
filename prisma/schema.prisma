@@ -17,15 +17,16 @@ datasource db {
 /// A country record
 model Country {
   /// ISO code
-  code String @id
+  code        String    @id
   /// Name of country
-  name String
+  name        String
   /// Alpha‑3 code
-  alpha3 String
+  alpha3      String
   /// Numeric code
-  numeric String
+  numeric     String
   /// Top level domain
-  tld String
+  tld         String
+  /// Neighbours
+  neighbours  Country[] @relation("Neighbours")
+  neighboursR Country[] @relation("Neighbours")
 }
-
-

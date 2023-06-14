@@ -2,7 +2,7 @@ import SchemaBuilder from "@pothos/core";
 import { version } from "../package.json";
 import { GraphQLSchema } from "graphql";
 import { countries, GeoCountry } from "./geonames.js";
-
+/*
 // build schema with pothos
 const builder = new SchemaBuilder({});
 
@@ -54,3 +54,4 @@ builder.queryType({
 });
 
 export const schema: GraphQLSchema = builder.toSchema();
+*/

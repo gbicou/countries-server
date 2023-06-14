@@ -4,11 +4,11 @@ import PrismaPlugin from "@pothos/plugin-prisma";
 import RelayPlugin from "@pothos/plugin-relay";
 import type PrismaTypes from "@pothos/plugin-prisma/generated";
 
-const prisma = new PrismaClient({
-  log: ["query"],
+export const prisma = new PrismaClient({
+  log: ["query", "info", "warn", "error"],
 });
 
-const builder = new SchemaBuilder<{
+export const builder = new SchemaBuilder<{
   PrismaTypes: PrismaTypes;
 }>({
   plugins: [RelayPlugin, PrismaPlugin],
@@ -27,35 +27,3 @@ const builder = new SchemaBuilder<{
     filterConnectionTotalCount: true,
   },
 });
-
-const Country = builder.prismaNode("Country", {
-  // Optional name for the object, defaults to the name of the prisma model
-  //name: "Country",
-  id: { field: "code" },
-  fields: (t) => ({
-    code: t.exposeID("code"),
-    name: t.exposeString("name"),
-  }),
-});
-
-builder.queryType({
-  description: "Queries",
-  fields: (t) => ({
-    countries: t.field({
-      type: [Country],
-      description: "All countries",
-      resolve: () => prisma.country.findMany(),
-    }),
-    posts: t.prismaConnection(
-      {
-        type: Country,
-        cursor: "code",
-        resolve: (query) => prisma.country.findMany({ ...query }),
-      },
-      {}, // optional options for the Connection type
-      {} // optional options for the Edge type),
-    ),
-  }),
-});
-
-export { builder };

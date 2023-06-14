@@ -712,6 +712,11 @@ packages:
     engines: {node: '>=6.0.0'}
     dev: true
 
+  /@jridgewell/resolve-uri@3.1.1:
+    resolution: {integrity: sha512-dSYZh7HhCDtCKm4QakX0xFpsRDqjjtZf/kjI/v3T3Nwt5r8/qz/M19F9ySyOqU94SXBmeG9ttTul+YnR4LOxFA==}
+    engines: {node: '>=6.0.0'}
+    dev: true
+
   /@jridgewell/set-array@1.1.2:
     resolution: {integrity: sha512-xnkseuNADM0gt2bs+BvhO0p78Mk762YnZdsuzFV018NoG1Sj1SCQvpSqa7XUaTam5vAGasABV9qXASMKnFMwMw==}
     engines: {node: '>=6.0.0'}
@@ -742,7 +747,7 @@ packages:
   /@jridgewell/trace-mapping@0.3.9:
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
     dependencies:
-      '@jridgewell/resolve-uri': 3.1.0
+      '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
@@ -1530,8 +1535,8 @@ packages:
       tslib: 2.5.3
     dev: false
 
-  /@whatwg-node/server@0.8.10:
-    resolution: {integrity: sha512-LlHhIF59E/49biDfL7MiEAykorPzFzZjmKOoOTZ0ceRmIdfkp7Wo5MiWk3SP/A9bxAaw6wBNFQspj9hAInO+jA==}
+  /@whatwg-node/server@0.8.11:
+    resolution: {integrity: sha512-vfl9xp7PHc9TizwDLQfQEqiPYosnUq/eOlPlt1fbblTKoEfBOuMJJdeDBs44ZAzw3IXBmr9xttE8KjNvQZarVA==}
     engines: {node: '>=16.0.0'}
     dependencies:
       '@whatwg-node/fetch': 0.9.6
@@ -1621,7 +1626,7 @@ packages:
     resolution: {integrity: sha512-kzRaCqXnpzWs+3z5ABPQiVke+iq0KXkHo8xiWV4RPTi5Yli0l97BEQuhXV1s7+aSU/fu1kUuxgS4MsQ0fRuygw==}
     engines: {node: '>=14.16'}
     dependencies:
-      type-fest: 3.11.1
+      type-fest: 3.12.0
     dev: true
 
   /ansi-regex@5.0.1:
@@ -2959,7 +2964,7 @@ packages:
       '@graphql-yoga/logger': 1.0.0
       '@graphql-yoga/subscription': 4.0.0
       '@whatwg-node/fetch': 0.9.6
-      '@whatwg-node/server': 0.8.10
+      '@whatwg-node/server': 0.8.11
       dset: 3.1.2
       graphql: 16.6.0
       lru-cache: 9.1.2
@@ -4319,7 +4324,7 @@ packages:
       error-ex: 1.3.2
       json-parse-even-better-errors: 3.0.0
       lines-and-columns: 2.0.3
-      type-fest: 3.11.1
+      type-fest: 3.12.0
     dev: true
 
   /parseurl@1.3.3:
@@ -4548,7 +4553,7 @@ packages:
       '@types/normalize-package-data': 2.4.1
       normalize-package-data: 5.0.0
       parse-json: 7.0.0
-      type-fest: 3.11.1
+      type-fest: 3.12.0
     dev: true
 
   /readable-stream@2.3.8:
@@ -5276,8 +5281,8 @@ packages:
     engines: {node: '>=12.20'}
     dev: true
 
-  /type-fest@3.11.1:
-    resolution: {integrity: sha512-aCuRNRERRVh33lgQaJRlUxZqzfhzwTrsE98Mc3o3VXqmiaQdHacgUtJ0esp+7MvZ92qhtzKPeusaX6vIEcoreA==}
+  /type-fest@3.12.0:
+    resolution: {integrity: sha512-qj9wWsnFvVEMUDbESiilKeXeHL7FwwiFcogfhfyjmvT968RXSvnl23f1JOClTHYItsi7o501C/7qVllscUP3oA==}
     engines: {node: '>=14.16'}
     dev: true
 
