@@ -1,6 +1,6 @@
 {
-  "extends": "./.nitro/types/tsconfig.json",
-  "compilerOptions": {
-    "strict": true
-  }
+  "extends": [
+    "./.nitro/types/tsconfig.json",
+    "@tsconfig/node20/tsconfig.json"
+  ]
 }

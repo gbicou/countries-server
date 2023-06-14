@@ -1,17 +1,30 @@
-FROM node:20-slim AS build-env
-
-COPY . /app
-WORKDIR /app
+FROM node:20-bullseye-slim AS build-env
 
 RUN corepack enable
-RUN pnpm install --frozen-lockfile
+
+WORKDIR /app
+
+COPY pnpm-lock.yaml /app
+RUN pnpm fetch
+
+COPY . /app
+
+RUN pnpm install -r --offline
 
 ENV NODE_ENV=production
 
+# RUN pnpm prisma generate
+
+FROM build-env AS bootstrap
+
+CMD pnpm bootstrap
+
+FROM build-env AS build-server
+
 RUN pnpm build
 
-FROM gcr.io/distroless/nodejs20-debian11
-COPY --from=build-env --chown=nonroot:nonroot /app/.output/server /server
+FROM gcr.io/distroless/nodejs20-debian11 AS server
+COPY --from=build-server --chown=nonroot:nonroot /app/.output/server /server
 WORKDIR /server
 
 USER nonroot

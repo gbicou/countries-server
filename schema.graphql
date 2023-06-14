@@ -4,26 +4,41 @@ schema {
     query: Query
 }
 
-"A country record"
-type Country {
-    "Alpha‑3 code"
-    alpha3: String!
-    "ISO code"
-    code: String!
-    "Name of country"
-    name: String!
-    "Neighbours countries"
-    neighbours: [Country!]!
-    "Numeric"
-    numeric: String!
-    tld: String!
+interface Node {
+    id: ID!
 }
 
+"A country record"
+type Country implements Node {
+    "ISO code"
+    code: ID!
+    id: ID!
+    "Name of country"
+    name: String!
+}
+
+type PageInfo {
+    endCursor: ID
+    hasNextPage: Boolean!
+    hasPreviousPage: Boolean!
+    startCursor: ID
+}
+
+"Queries"
 type Query {
     "All countries"
     countries: [Country!]!
-    "Country by code"
-    country(code: String!): Country
-    "Package version"
-    version: String!
+    node(id: ID!): Node
+    nodes(ids: [ID!]!): [Node]!
+    posts(after: ID, before: ID, first: Int, last: Int): QueryPostsConnection!
+}
+
+type QueryPostsConnection {
+    edges: [QueryPostsConnectionEdge]!
+    pageInfo: PageInfo!
+}
+
+type QueryPostsConnectionEdge {
+    cursor: ID!
+    node: Country!
 }

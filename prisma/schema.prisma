@@ -1,0 +1,31 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator pothos {
+  provider = "prisma-pothos-types"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// A country record
+model Country {
+  /// ISO code
+  code String @id
+  /// Name of country
+  name String
+  /// Alpha‑3 code
+  alpha3 String
+  /// Numeric code
+  numeric String
+  /// Top level domain
+  tld String
+}
+
+

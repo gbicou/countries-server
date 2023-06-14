@@ -1,0 +1,32 @@
+services:
+
+  db:
+    image: postgres:15
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: example
+
+  bootstrap:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: bootstrap
+    image: countries-bootstrap:latest
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: "postgresql://postgres:example@db:5432/postgres"
+
+  countries-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: server
+    image: countries-server:latest
+    depends_on:
+      - bootstrap
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: "postgresql://postgres:example@db:5432/postgres"
