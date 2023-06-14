@@ -1,0 +1,25 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator pothos {
+  provider = "prisma-pothos-types"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Country {
+  code        String    @id
+  name        String
+  alpha3      String
+  numeric     String
+  tld         String
+  neighbours  Country[] @relation("Neighbours")
+  neighboursR Country[] @relation("Neighbours")
+}
