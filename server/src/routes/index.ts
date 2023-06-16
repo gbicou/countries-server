@@ -1,5 +1,5 @@
 import { createYoga } from "graphql-yoga";
-import { schema } from "../schema.js";
+import { schema } from "@bicou/countries-server-schema";
 
 // Create a Yoga instance with a GraphQL schema.
 const yoga = createYoga({

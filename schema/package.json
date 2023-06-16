@@ -1,0 +1,56 @@
+{
+  "name": "@bicou/countries-server-schema",
+  "version": "1.3.3",
+  "description": "graphql sample server",
+  "homepage": "https://github.com/gbicou/countries-server",
+  "keywords": [
+    "graphql",
+    "typescript",
+    "pothos",
+    "graphql-yoga",
+    "vercel",
+    "nitropack"
+  ],
+  "author": "Benjamin VIELLARD <bicou@bicou.com>",
+  "license": "MIT",
+  "repository": "github:gbicou/countries-server",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "build": "unbuild",
+    "bootstrap": "prisma generate && prisma migrate deploy && prisma db seed"
+  },
+  "dependencies": {
+    "@pothos/core": "^3.30.0",
+    "@pothos/plugin-relay": "^3.43.0",
+    "@pothos/plugin-prisma": "^3.52.0",
+    "@prisma/client": "4.15.0"
+  },
+  "devDependencies": {
+    "prisma": "^4.15.0",
+    "graphql": "^16.6.0",
+    "unbuild": "^1.2.1",
+    "eslint-config-bicou": "workspace:*"
+  },
+  "peerDependencies": {
+    "graphql": "^16.6.0"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "pnpm@8.6.2"
+}

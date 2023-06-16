@@ -1,5 +1,4 @@
 module.exports = {
-  root: true,
   extends: [
     "eslint:recommended",
     "plugin:unicorn/recommended",
@@ -10,7 +9,6 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   parserOptions: {
     project: ["./tsconfig.json"],
-    tsconfigRootDir: __dirname,
     ecmaVersion: "latest",
   },
-};
+}

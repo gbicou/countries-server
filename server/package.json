@@ -1,0 +1,40 @@
+{
+  "name": "@bicou/countries-server-server",
+  "version": "1.3.3",
+  "description": "graphql sample server",
+  "homepage": "https://github.com/gbicou/countries-server",
+  "keywords": [
+    "graphql",
+    "typescript",
+    "pothos",
+    "graphql-yoga",
+    "vercel",
+    "nitropack"
+  ],
+  "author": "Benjamin VIELLARD <bicou@bicou.com>",
+  "license": "MIT",
+  "repository": "github:gbicou/countries-server",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "postinstall": "nitro prepare",
+    "dev": "nitro dev",
+    "build": "nitro build",
+    "start": "node .output/server/index.mjs"
+  },
+  "dependencies": {
+    "nitropack": "^2.4.1",
+    "h3": "^1.6.6",
+    "graphql-yoga": "^4.0.0",
+    "graphql": "^16.6.0",
+    "@bicou/countries-server-schema": "workspace:*"
+  },
+  "devDependencies": {
+    "eslint-config-bicou": "workspace:*",
+    "@bicou/countries-server": "workspace:*"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "pnpm@8.6.2"
+}
