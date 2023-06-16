@@ -2,7 +2,7 @@
   "$schema": "https://turbo.build/schema.json",
   "pipeline": {
     "generate": {
-      "outputs": [".nitro/types/**"]
+      "cache": false
     },
     "build": {
       "dependsOn": ["generate", "^build"],
