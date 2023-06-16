@@ -5,14 +5,17 @@
       "outputs": [".nitro/types/**"]
     },
     "build": {
-      "dependsOn": ["^build", "generate"],
+      "dependsOn": ["generate", "^build"],
       "outputs": [".output/**", "dist/**"]
     },
     "lint": {
       "dependsOn": ["generate"]
     },
+    "stub": {
+      "outputs": ["dist/**"]
+    },
     "dev": {
-      "dependsOn": ["generate"],
+      "dependsOn": ["generate", "stub"],
       "cache": false,
       "persistent": true
     }

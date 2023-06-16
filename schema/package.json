@@ -29,7 +29,7 @@
   "scripts": {
     "generate": "prisma generate",
     "build": "unbuild",
-    "dev": "unbuild --stub",
+    "stub": "unbuild --stub",
     "lint": "eslint .",
     "bootstrap": "prisma generate && prisma migrate deploy && prisma db seed"
   },
