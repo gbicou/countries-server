@@ -32,8 +32,7 @@
     "@bicou/countries-server-schema": "workspace:*"
   },
   "devDependencies": {
-    "eslint-config-bicou": "workspace:*",
-    "@bicou/countries-server": "workspace:*"
+    "eslint-config-bicou": "workspace:*"
   },
   "publishConfig": {
     "access": "public"
