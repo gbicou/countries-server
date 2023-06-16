@@ -16,7 +16,9 @@
   "repository": "github:gbicou/countries-server",
   "type": "module",
   "scripts": {
-    "lint": "turbo lint",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "build": "turbo run build",
     "release": "semantic-release"
   },
   "devDependencies": {

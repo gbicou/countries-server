@@ -13,15 +13,15 @@ RUN pnpm install -r --offline
 
 ENV NODE_ENV=production
 
-# RUN pnpm --filter=@bicou/countries-server-schema prisma generate
+RUN pnpm turbo run generate
 
 FROM build-env AS bootstrap
 
-CMD pnpm --filter=@bicou/countries-server-schema bootstrap
+CMD pnpm turbo run bootstrap
 
 FROM build-env AS build-server
 
-RUN pnpm --filter=@bicou/countries-server-server build
+RUN pnpm turbo run build
 
 FROM gcr.io/distroless/nodejs20-debian11 AS server
 COPY --from=build-server --chown=nonroot:nonroot /app/server/.output/server /server
