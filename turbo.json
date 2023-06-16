@@ -1,0 +1,20 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "generate": {
+      "outputs": [".nitro/types/**"]
+    },
+    "build": {
+      "dependsOn": ["^build", "generate"],
+      "outputs": [".output/**", "dist/**"]
+    },
+    "lint": {
+      "dependsOn": ["generate"]
+    },
+    "dev": {
+      "dependsOn": ["generate"],
+      "cache": false,
+      "persistent": true
+    }
+  }
+}

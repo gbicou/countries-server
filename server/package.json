@@ -16,15 +16,17 @@
   "repository": "github:gbicou/countries-server",
   "type": "module",
   "scripts": {
-    "lint": "eslint .",
     "postinstall": "nitro prepare",
+    "generate": "nitro prepare",
     "dev": "nitro dev",
     "build": "nitro build",
-    "start": "node .output/server/index.mjs"
+    "start": "node .output/server/index.mjs",
+    "lint": "eslint ."
   },
   "dependencies": {
     "nitropack": "^2.4.1",
     "h3": "^1.6.6",
+    "defu": "^6.1.2",
     "graphql-yoga": "^4.0.0",
     "graphql": "^16.6.0",
     "@bicou/countries-server-schema": "workspace:*"
