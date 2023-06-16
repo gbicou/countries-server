@@ -13,8 +13,6 @@ RUN pnpm install -r --offline
 
 ENV NODE_ENV=production
 
-RUN pnpm turbo run generate
-
 FROM build-env AS bootstrap
 
 CMD pnpm turbo run bootstrap

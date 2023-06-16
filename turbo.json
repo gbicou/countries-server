@@ -4,6 +4,10 @@
     "generate": {
       "cache": false
     },
+    "bootstrap": {
+      "dependsOn": ["generate"],
+      "cache": false
+    },
     "build": {
       "dependsOn": ["generate", "^build"],
       "outputs": [".output/**", "dist/**"]

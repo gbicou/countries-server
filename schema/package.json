@@ -31,7 +31,7 @@
     "build": "unbuild",
     "stub": "unbuild --stub",
     "lint": "eslint .",
-    "bootstrap": "prisma generate && prisma migrate deploy && prisma db seed"
+    "bootstrap": "prisma migrate deploy && prisma db seed"
   },
   "dependencies": {
     "@pothos/core": "^3.30.0",
