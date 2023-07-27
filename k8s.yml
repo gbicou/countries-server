@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: countries-server
+  labels:
+    app: countries-server
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 3000
+    targetPort: 3000
+    protocol: TCP
+    name: http
+  selector:
+    app: countries-server
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: countries-server-deployment
+  labels:
+    app: countries-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: countries-server
+  template:
+    metadata:
+      labels:
+        app: countries-server
+    spec:
+      containers:
+      - name: countries-server
+        image: bicou/countries-server:main
+        ports:
+        - containerPort: 3000
