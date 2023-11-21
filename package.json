@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "nx run-many -t dev",
     "build": "nx run-many -t build",
-    "start": "nx start @bicou/countries-server",
+    "start": "nx start server",
     "lint": "eslint .",
     "release": "changeset publish"
   },
