@@ -13,16 +13,23 @@
   "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/countries.mjs",
+      "import": "./dist/countries.js",
       "require": "./dist/countries.cjs"
     }
   },
   "main": "./dist/countries.cjs",
   "types": "./dist/countries.d.ts",
-  "files": ["dist"],
+  "files": ["dist", "src"],
+  "tsup": {
+    "entry": ["src/countries.ts"],
+    "format": ["esm", "cjs"],
+    "dts": true,
+    "clean": true
+  },
   "scripts": {
-    "dev": "unbuild --stub",
-    "build": "unbuild --minify"
+    "dev": "tsup --watch",
+    "stub": "tsup --dts-only",
+    "build": "tsup --minify"
   },
   "publishConfig": {
     "access": "public"

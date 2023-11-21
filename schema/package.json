@@ -14,18 +14,23 @@
   "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/schema.mjs",
+      "import": "./dist/schema.js",
       "require": "./dist/schema.cjs"
     }
   },
   "main": "./dist/schema.cjs",
   "types": "./dist/schema.d.ts",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist", "src"],
+  "tsup": {
+    "entry": ["src/schema.ts"],
+    "format": ["esm", "cjs"],
+    "dts": true,
+    "clean": true
+  },
   "scripts": {
-    "dev": "unbuild --stub",
-    "build": "unbuild --minify"
+    "dev": "tsup --watch",
+    "stub": "tsup --dts-only",
+    "build": "tsup --minify"
   },
   "dependencies": {
     "@bicou/countries-server-data": "workspace:*",

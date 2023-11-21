@@ -29,9 +29,12 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-        
+
       - name: Install ESLint SARIF
         run: pnpm add -wD @microsoft/eslint-formatter-sarif@3.0.0
+
+      - name: Stub packages type definitions
+        run: pnpm stub
 
       - name: Run ESLint
         run: pnpm eslint . --format @microsoft/eslint-formatter-sarif --output-file eslint-results.sarif
