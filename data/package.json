@@ -1,6 +1,6 @@
 {
   "name": "@bicou/countries-server-data",
-  "version": "1.3.3",
+  "version": "1.4.0",
   "description": "graphql countries server data",
   "homepage": "https://github.com/gbicou/countries-server",
   "keywords": [
@@ -19,10 +19,18 @@
   },
   "main": "./dist/countries.cjs",
   "types": "./dist/countries.d.ts",
-  "files": ["dist", "src"],
+  "files": [
+    "dist",
+    "src"
+  ],
   "tsup": {
-    "entry": ["src/countries.ts"],
-    "format": ["esm", "cjs"],
+    "entry": [
+      "src/countries.ts"
+    ],
+    "format": [
+      "esm",
+      "cjs"
+    ],
     "dts": true,
     "clean": true
   },
