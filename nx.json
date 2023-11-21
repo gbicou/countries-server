@@ -10,6 +10,11 @@
       "dependsOn": [
         "build"
       ]
+    },
+    "stub": {
+      "dependsOn": [
+        "^stub"
+      ]
     }
   },
   "affected": {
