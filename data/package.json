@@ -1,0 +1,30 @@
+{
+  "name": "@bicou/countries-server-data",
+  "version": "1.3.3",
+  "description": "graphql countries server data",
+  "homepage": "https://github.com/gbicou/countries-server",
+  "keywords": [
+    "graphql",
+    "typescript"
+  ],
+  "author": "Benjamin VIELLARD <bicou@bicou.com>",
+  "license": "MIT",
+  "repository": "github:gbicou/countries-server",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/countries.mjs",
+      "require": "./dist/countries.cjs"
+    }
+  },
+  "main": "./dist/countries.cjs",
+  "types": "./dist/countries.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild --minify"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "targetDefaults": {
+    "build": {
+      "cache": true,
+      "dependsOn": [
+        "^build"
+      ]
+    },
+    "start": {
+      "dependsOn": [
+        "build"
+      ]
+    }
+  },
+  "affected": {
+    "defaultBase": "main"
+  }
+}

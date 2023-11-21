@@ -9,7 +9,7 @@ type Country {
     "Alpha‑3 code"
     alpha3: String!
     "ISO code"
-    code: String!
+    code: ID!
     "Name of country"
     name: String!
     "Neighbours countries"
@@ -19,11 +19,12 @@ type Country {
     tld: String!
 }
 
+"Queries"
 type Query {
     "All countries"
     countries: [Country!]!
     "Country by code"
-    country(code: String!): Country
+    country(code: ID!): Country
     "Package version"
     version: String!
 }

@@ -11,7 +11,7 @@ ENV NODE_ENV=production
 RUN pnpm build
 
 FROM gcr.io/distroless/nodejs20-debian11
-COPY --from=build-env --chown=nonroot:nonroot /app/.output/server /server
+COPY --from=build-env --chown=nonroot:nonroot /app/server/.output/server /server
 WORKDIR /server
 
 USER nonroot

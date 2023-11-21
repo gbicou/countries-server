@@ -1,0 +1,43 @@
+{
+  "name": "@bicou/countries-server-schema",
+  "version": "1.3.3",
+  "description": "graphql countries server data",
+  "homepage": "https://github.com/gbicou/countries-server",
+  "keywords": [
+    "graphql",
+    "typescript",
+    "pothos"
+  ],
+  "author": "Benjamin VIELLARD <bicou@bicou.com>",
+  "license": "MIT",
+  "repository": "github:gbicou/countries-server",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/schema.mjs",
+      "require": "./dist/schema.cjs"
+    }
+  },
+  "main": "./dist/schema.cjs",
+  "types": "./dist/schema.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild --minify"
+  },
+  "dependencies": {
+    "@bicou/countries-server-data": "workspace:*",
+    "@pothos/core": "^3.38.0"
+  },
+  "devDependencies": {
+    "graphql": "^16.8.1"
+  },
+  "peerDependencies": {
+    "graphql": "^16.8.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
