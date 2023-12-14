@@ -1,5 +1,11 @@
 # @bicou/countries-server
 
+## 1.4.1
+
+### Patch Changes
+
+- [`1943a1a`](https://github.com/gbicou/countries-server/commit/1943a1a5129b95ad37045ff484ebb639cafb5b01) Thanks [@gbicou](https://github.com/gbicou)! - ignore nitro output
+
 ## 1.4.0
 
 ### Minor Changes
