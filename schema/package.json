@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@bicou/countries-server-data": "workspace:*",
-    "@pothos/core": "^3.40.1"
+    "@pothos/core": "^3.41.0"
   },
   "devDependencies": {
     "graphql": "^16.8.1"
