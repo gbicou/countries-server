@@ -1,6 +1,6 @@
 {
   "name": "@bicou/countries-server-schema",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "graphql countries server schema",
   "homepage": "https://github.com/gbicou/countries-server",
   "keywords": [

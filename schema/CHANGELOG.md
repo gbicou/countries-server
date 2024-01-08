@@ -1,5 +1,14 @@
 # @bicou/countries-server-schema
 
+## 1.4.1
+
+### Patch Changes
+
+- [`6a207a9`](https://github.com/gbicou/countries-server/commit/6a207a95c19f88ff2f4562bddbbd6c557b949315) Thanks [@gbicou](https://github.com/gbicou)! - use geonames source data and export used fields only
+
+- Updated dependencies [[`6a207a9`](https://github.com/gbicou/countries-server/commit/6a207a95c19f88ff2f4562bddbbd6c557b949315)]:
+  - @bicou/countries-server-data@1.4.1
+
 ## 1.4.0
 
 ### Minor Changes
