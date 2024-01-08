@@ -1,5 +1,12 @@
 # @bicou/countries-server
 
+## 1.4.2
+
+### Patch Changes
+
+- Updated dependencies [[`6a207a9`](https://github.com/gbicou/countries-server/commit/6a207a95c19f88ff2f4562bddbbd6c557b949315)]:
+  - @bicou/countries-server-schema@1.4.1
+
 ## 1.4.1
 
 ### Patch Changes
