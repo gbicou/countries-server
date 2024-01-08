@@ -72,8 +72,8 @@ importers:
         specifier: ^16.8.1
         version: 16.8.1
       graphql-yoga:
-        specifier: ^5.1.0
-        version: 5.1.0(graphql@16.8.1)
+        specifier: ^5.1.1
+        version: 5.1.1(graphql@16.8.1)
       h3:
         specifier: ^1.9.0
         version: 1.9.0
@@ -3129,8 +3129,8 @@ packages:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
     dev: true
 
-  /graphql-yoga@5.1.0(graphql@16.8.1):
-    resolution: {integrity: sha512-Ee5uJkNSI7ZRS8X79OlPEuF8m2+HCn/dmjvbMNpsz5Yq+sqsLXTEFhKjhjK6hyqrTl1pQwGwJTbl9f886hDMDg==}
+  /graphql-yoga@5.1.1(graphql@16.8.1):
+    resolution: {integrity: sha512-oak5nVKTHpqJgpA1aT3cJPOlCidrW7l6nbc5L6w07VdFul16ielGI2ZnQDAXO+qQih09/4WspD5x0SsSZH+hkg==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       graphql: ^15.2.0 || ^16.0.0
