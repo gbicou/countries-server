@@ -37,7 +37,8 @@
   "scripts": {
     "dev": "tsup --watch",
     "stub": "tsup --dts-only",
-    "build": "tsup --minify"
+    "build": "tsup --minify",
+    "build:countries": "tsx build-countries.ts"
   },
   "publishConfig": {
     "access": "public"

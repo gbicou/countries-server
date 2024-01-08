@@ -20,8 +20,7 @@ export function buildSchema(version: string): GraphQLSchema {
         type: [Country],
         description: "Neighbours countries",
         resolve: (parent) => {
-          const ids = parent.neighbours.split(",");
-          return countries.filter((c) => ids.includes(c.ISO));
+          return countries.filter((c) => parent.neighbours.includes(c.ISO));
         },
       }),
     }),
