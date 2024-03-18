@@ -26,7 +26,7 @@
     "graphql": "^16.8.1",
     "graphql-yoga": "^5.1.1",
     "h3": "^1.11.1",
-    "nitropack": "^2.9.3"
+    "nitropack": "^2.9.4"
   },
   "publishConfig": {
     "access": "public"
