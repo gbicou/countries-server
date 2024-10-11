@@ -1,0 +1,33 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [
+        ".nitro/**",
+        ".nuxt/**",
+        ".output/**",
+        ".vercel/**",
+        "dist/**"
+      ]
+    },
+    "start": {
+      "dependsOn": ["build"],
+      "cache": false,
+      "persistent": true
+    },
+    "test": {
+      "dependsOn": ["build"]
+    },
+    "stub": {
+      "dependsOn": ["^stub"]
+    },
+    "lint": {},
+    "dev": {
+      "cache": false,
+      "persistent": true
+    }
+  },
+  "globalEnv": ["VERCEL", "GITHUB_ACTIONS"]
+}

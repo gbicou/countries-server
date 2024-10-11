@@ -19,19 +19,21 @@
     "postinstall": "nitro prepare",
     "dev": "nitro dev",
     "build": "nitro prepare && nitro build",
-    "start": "node .output/server/index.mjs"
+    "start": "node .output/server/index.mjs",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@bicou/countries-server-schema": "workspace:*",
-    "graphql": "^16.8.1",
-    "graphql-yoga": "^5.3.1",
-    "h3": "^1.11.1",
-    "nitropack": "^2.9.6"
+    "graphql": "16.9.0",
+    "graphql-yoga": "5.7.0",
+    "h3": "1.13.0",
+    "nitropack": "2.9.7"
+  },
+  "devDependencies": {
+    "@private/eslint-config": "workspace:*",
+    "eslint": "9.12.0"
   },
   "publishConfig": {
     "access": "public"
-  },
-  "nx": {
-    "name": "server"
   }
 }

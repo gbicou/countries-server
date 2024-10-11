@@ -2,3 +2,4 @@ packages:
   - data
   - schema
   - server
+  - eslint-config
