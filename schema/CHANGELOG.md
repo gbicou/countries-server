@@ -1,5 +1,11 @@
 # @bicou/countries-server-schema
 
+## 1.6.0
+
+### Minor Changes
+
+- [`aae8db7`](https://github.com/gbicou/countries-server/commit/aae8db7eb557840388189fb9e460f19785f05c91) Thanks [@gbicou](https://github.com/gbicou)! - non nullable fields
+
 ## 1.5.0
 
 ### Minor Changes
