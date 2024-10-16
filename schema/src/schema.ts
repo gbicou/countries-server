@@ -17,13 +17,14 @@ export function buildSchema(version: string): GraphQLSchema {
   builder.objectType(Country, {
     description: 'A country record',
     fields: t => ({
-      code: t.exposeID('ISO', { description: 'ISO code' }),
-      name: t.exposeString('Country', { description: 'Name of country' }),
-      alpha3: t.exposeString('ISO3', { description: 'Alpha‑3 code' }),
-      numeric: t.exposeString('ISO-Numeric', { description: 'Numeric' }),
-      tld: t.exposeString('tld'),
+      code: t.exposeID('ISO', { nullable: false, description: 'ISO code' }),
+      name: t.exposeString('Country', { nullable: false, description: 'Name of country' }),
+      alpha3: t.exposeString('ISO3', { nullable: false, description: 'Alpha‑3 code' }),
+      numeric: t.exposeString('ISO-Numeric', { nullable: false, description: 'Numeric' }),
+      tld: t.exposeString('tld', { nullable: false, description: 'Top level domain' }),
       neighbours: t.field({
         type: [Country],
+        nullable: false,
         description: 'Neighbours countries',
         resolve: (parent) => {
           return countries.filter(c => parent.neighbours.includes(c.ISO))
@@ -36,11 +37,13 @@ export function buildSchema(version: string): GraphQLSchema {
     description: 'Queries',
     fields: t => ({
       version: t.string({
+        nullable: false,
         description: 'Package version',
         resolve: () => version,
       }),
       countries: t.field({
         type: [Country],
+        nullable: false,
         description: 'All countries',
         resolve: () => countries,
       }),

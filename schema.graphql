@@ -16,6 +16,7 @@ type Country {
     neighbours: [Country!]!
     "Numeric"
     numeric: String!
+    "Top level domain"
     tld: String!
 }
 
