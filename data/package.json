@@ -38,7 +38,7 @@
     "@private/eslint-config": "workspace:*",
     "eslint": "9.13.0",
     "tsup": "8.3.5",
-    "tsx": "4.19.1"
+    "tsx": "4.19.2"
   },
   "scripts": {
     "dev": "tsup --watch",
