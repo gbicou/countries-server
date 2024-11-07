@@ -11,6 +11,9 @@ jobs:
   eslint:
     name: Run eslint scanning
     runs-on: ubuntu-latest
+    env:
+      TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+      TURBO_TEAM: ${{ vars.TURBO_TEAM }}
     permissions:
       contents: read
       security-events: write
@@ -30,8 +33,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Stub packages type definitions
-        run: pnpm stub
+#      - name: Stub packages type definitions
+#        run: pnpm stub
 
       - name: Run ESLint
         run: pnpm lint
