@@ -11,7 +11,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
+    "eslint": "9.14.0",
     "@eslint/js": "9.14.0",
     "@stylistic/eslint-plugin": "2.10.1",
     "eslint-plugin-jsdoc": "50.4.3",
