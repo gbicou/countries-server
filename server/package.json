@@ -25,13 +25,13 @@
   "dependencies": {
     "@bicou/countries-server-schema": "workspace:*",
     "graphql": "16.9.0",
-    "graphql-yoga": "5.10.1",
+    "graphql-yoga": "5.10.2",
     "h3": "1.13.0",
     "nitropack": "2.10.4"
   },
   "devDependencies": {
     "@private/eslint-config": "workspace:*",
-    "eslint": "9.14.0"
+    "eslint": "9.15.0"
   },
   "publishConfig": {
     "access": "public"
