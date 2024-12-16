@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@bicou/countries-server-schema": "workspace:*",
-    "graphql": "16.9.0",
+    "graphql": "16.10.0",
     "graphql-yoga": "5.10.6",
     "h3": "1.13.0",
     "nitropack": "2.10.4"
