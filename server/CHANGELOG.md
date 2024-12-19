@@ -1,5 +1,16 @@
 # @bicou/countries-server
 
+## 1.6.0
+
+### Minor Changes
+
+- [#197](https://github.com/gbicou/countries-server/pull/197) [`0ed25a5`](https://github.com/gbicou/countries-server/commit/0ed25a57b29b5379c233cbb716090d4dcebf8897) Thanks [@renovate](https://github.com/apps/renovate)! - upgrade to node 22
+
+### Patch Changes
+
+- Updated dependencies [[`0ed25a5`](https://github.com/gbicou/countries-server/commit/0ed25a57b29b5379c233cbb716090d4dcebf8897)]:
+  - @bicou/countries-server-schema@1.7.0
+
 ## 1.5.1
 
 ### Patch Changes
