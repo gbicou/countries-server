@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "@bicou/countries-server-data": "workspace:*",
-    "@pothos/core": "4.3.0"
+    "@pothos/core": "^4.3.0"
   },
   "devDependencies": {
     "@private/eslint-config": "workspace:*",
@@ -52,7 +52,7 @@
     "tsup": "8.3.5"
   },
   "peerDependencies": {
-    "graphql": "16.10.0"
+    "graphql": "^16.10.0"
   },
   "publishConfig": {
     "access": "public"
