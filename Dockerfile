@@ -3,6 +3,7 @@ FROM node:22-slim AS build-env
 COPY . /app
 WORKDIR /app
 
+RUN npm install -g corepack
 RUN corepack enable
 RUN pnpm install --frozen-lockfile
 
