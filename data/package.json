@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@private/eslint-config": "workspace:*",
-    "eslint": "9.20.0",
+    "eslint": "9.20.1",
     "tsup": "8.3.6",
     "tsx": "4.19.2"
   },
