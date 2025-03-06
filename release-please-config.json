@@ -9,7 +9,8 @@
         "data",
         "eslint-config",
         "schema",
-        "server"
+        "server",
+        "pnpm-lock.yaml"
       ]
     },
     "data": {
