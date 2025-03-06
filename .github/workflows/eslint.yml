@@ -2,10 +2,8 @@ name: ESLint
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    # The branches below must be a subset of the branches above
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
   eslint:
@@ -21,20 +19,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version-file: '.nvmrc'
-          cache: 'pnpm'
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-#      - name: Stub packages type definitions
-#        run: pnpm stub
+      - name: Setup node and pnpm
+        uses: ./.github/actions/setup-node-pnpm
 
       - name: Run ESLint
         run: pnpm lint

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "bootstrap-sha": "274ba0a3590fda7632a77bed7e1fd1dbc1090c26",
+  "always-update": true,
+  "plugins": ["node-workspace"],
+  "packages": {
+    ".": {
+      "exclude-paths": [
+        "data",
+        "eslint-config",
+        "schema",
+        "server"
+      ]
+    },
+    "data": {
+    },
+    "eslint-config": {
+    },
+    "schema": {
+    },
+    "server": {
+    }
+  }
+}
