@@ -6,6 +6,13 @@
 * **release:** docker metadata semver and pr ([52c247a](https://github.com/gbicou/countries-server/commit/52c247a34d4df7b44e2cda14ef9cb4eecea8024e))
 * **release:** publish to github container registry ([070520d](https://github.com/gbicou/countries-server/commit/070520d41d8bbd720e3c88734e131f1cfd881d05))
 
+## [1.0.2](https://github.com/gbicou/countries-server/compare/countries-server-workspace-v1.0.1...countries-server-workspace-v1.0.2) (2025-03-06)
+
+
+### Bug Fixes
+
+* Publish recursively ([02a21a7](https://github.com/gbicou/countries-server/commit/02a21a7d7f0e859009f0778571ddcaf564b40d82))
+
 ## [1.0.1](https://github.com/gbicou/countries-server/compare/countries-server-workspace-v1.0.0...countries-server-workspace-v1.0.1) (2025-03-06)
 
 
