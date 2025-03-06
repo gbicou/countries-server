@@ -1,5 +1,39 @@
 # @bicou/countries-server
 
+## [1.6.1](https://github.com/gbicou/countries-server/compare/countries-server-v1.6.0...countries-server-v1.6.1) (2025-03-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency graphql-yoga to v5.10.10 ([a79bfac](https://github.com/gbicou/countries-server/commit/a79bfac13d2ea72011603d80156ed7ec23281443))
+* **deps:** update dependency graphql-yoga to v5.10.10 ([7f17769](https://github.com/gbicou/countries-server/commit/7f17769d214d1316863ff3e4516f94fa8f6e912f))
+* **deps:** update dependency graphql-yoga to v5.10.11 ([2f2fe6a](https://github.com/gbicou/countries-server/commit/2f2fe6a8a63841534d69dc821b38cea1909a9942))
+* **deps:** update dependency graphql-yoga to v5.10.11 ([d715adc](https://github.com/gbicou/countries-server/commit/d715adc60fcfb5ed2fc09a3f5f8c674a58c6231f))
+* **deps:** update dependency graphql-yoga to v5.10.8 ([ff5e768](https://github.com/gbicou/countries-server/commit/ff5e7682e49bbf236b7ba89f7fb25dc8deba0d2d))
+* **deps:** update dependency graphql-yoga to v5.10.8 ([5275f13](https://github.com/gbicou/countries-server/commit/5275f13fd5e764cca5faf11c7e8acf7590de9c96))
+* **deps:** update dependency graphql-yoga to v5.10.9 ([eae341a](https://github.com/gbicou/countries-server/commit/eae341af8c74c88cc60c3f3eeeb111040fce37eb))
+* **deps:** update dependency graphql-yoga to v5.10.9 ([adb7d94](https://github.com/gbicou/countries-server/commit/adb7d9457be8dc0076a32482ddb7bfa1aff39be7))
+* **deps:** update dependency graphql-yoga to v5.11.0 ([3458690](https://github.com/gbicou/countries-server/commit/3458690bf0d5b849549f9ef6d2d62e0370a538ed))
+* **deps:** update dependency graphql-yoga to v5.11.0 ([8d44f13](https://github.com/gbicou/countries-server/commit/8d44f13235187be5fe988044f38de5f30ea696a5))
+* **deps:** update dependency graphql-yoga to v5.12.0 ([7aeabed](https://github.com/gbicou/countries-server/commit/7aeabed83bca699469004b247e57e30047a3a266))
+* **deps:** update dependency graphql-yoga to v5.12.0 ([7ddf37b](https://github.com/gbicou/countries-server/commit/7ddf37bf36863897055ea203ae7a01106fb7c205))
+* **deps:** update dependency graphql-yoga to v5.12.1 ([d6e5572](https://github.com/gbicou/countries-server/commit/d6e55724900a35bade7152849670dd0e20a0ff13))
+* **deps:** update dependency graphql-yoga to v5.12.1 ([e753d6a](https://github.com/gbicou/countries-server/commit/e753d6a4a6f8e475137fb59f6c1b76fe90ea6e1b))
+* **deps:** update dependency graphql-yoga to v5.12.2 ([1ac9aff](https://github.com/gbicou/countries-server/commit/1ac9aff70b7177fdb341a7de873ac86d2c234b8d))
+* **deps:** update dependency graphql-yoga to v5.12.2 ([8146285](https://github.com/gbicou/countries-server/commit/814628571f8211783792f5e0a51689d750fc0187))
+* **deps:** update dependency graphql-yoga to v5.13.1 ([d6283ef](https://github.com/gbicou/countries-server/commit/d6283ef15731a11f4388028624ec909d5f70831e))
+* **deps:** update dependency graphql-yoga to v5.13.1 ([c12b114](https://github.com/gbicou/countries-server/commit/c12b114efc1e0a011b4cdffd9df833c9c9fe2e1e))
+* **deps:** update dependency h3 to v1.13.1 ([d570dd2](https://github.com/gbicou/countries-server/commit/d570dd2651e417f33bdf59c796466fe3ee7f70d1))
+* **deps:** update dependency h3 to v1.13.1 ([070c579](https://github.com/gbicou/countries-server/commit/070c5795182da31253323be155d443134021c66e))
+* **deps:** update dependency h3 to v1.14.0 ([3ca8768](https://github.com/gbicou/countries-server/commit/3ca87689a833f86f02e26047fba37e7e8142a299))
+* **deps:** update dependency h3 to v1.14.0 ([6d7fc8d](https://github.com/gbicou/countries-server/commit/6d7fc8d49a0a9f3971bd1ee1b78c3df347584826))
+* **deps:** update dependency h3 to v1.15.0 ([7fd8a80](https://github.com/gbicou/countries-server/commit/7fd8a80348c29a86e9a6f5c1b74c21677fc732b1))
+* **deps:** update dependency h3 to v1.15.0 ([4e7aa85](https://github.com/gbicou/countries-server/commit/4e7aa85182e4b1b137ca944c4a00fc21fb8e2fb4))
+* **deps:** update dependency h3 to v1.15.1 ([114475e](https://github.com/gbicou/countries-server/commit/114475ec443075a0ff35d361ff4e680353fe986b))
+* **deps:** update dependency h3 to v1.15.1 ([71070bc](https://github.com/gbicou/countries-server/commit/71070bc35a69921b86999bdc6436f4e598bde706))
+* **deps:** update dependency nitropack to v2.11.3 ([b0d5622](https://github.com/gbicou/countries-server/commit/b0d56226912a38d7405f19a9b5c31a47dc9fc597))
+* **deps:** update dependency nitropack to v2.11.3 ([59a64bb](https://github.com/gbicou/countries-server/commit/59a64bb5b7fa42189684e4472744af082188e02e))
+
 ## 1.6.0
 
 ### Minor Changes
