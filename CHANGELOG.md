@@ -6,6 +6,16 @@
 * **release:** docker metadata semver and pr ([52c247a](https://github.com/gbicou/countries-server/commit/52c247a34d4df7b44e2cda14ef9cb4eecea8024e))
 * **release:** publish to github container registry ([070520d](https://github.com/gbicou/countries-server/commit/070520d41d8bbd720e3c88734e131f1cfd881d05))
 
+## [1.0.3](https://github.com/gbicou/countries-server/compare/countries-server-workspace-v1.0.2...countries-server-workspace-v1.0.3) (2025-03-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency nitropack to v2.11.4 ([d5d0ca8](https://github.com/gbicou/countries-server/commit/d5d0ca8995fd534bfdce36da1755986a2c81c5f5))
+* **deps:** update dependency nitropack to v2.11.4 ([6e9843d](https://github.com/gbicou/countries-server/commit/6e9843d3c76aed35ea2ca0f0643ca41b2b5a87d5))
+* **deps:** update dependency nitropack to v2.11.5 ([#335](https://github.com/gbicou/countries-server/issues/335)) ([3eb3c43](https://github.com/gbicou/countries-server/commit/3eb3c431814ecb718fa99eb3c35f06154f001449))
+* **deps:** update dependency nitropack to v2.11.6 ([#338](https://github.com/gbicou/countries-server/issues/338)) ([7feeab8](https://github.com/gbicou/countries-server/commit/7feeab8ad769d40be561a03db6785c025fd2ff88))
+
 ## [1.0.2](https://github.com/gbicou/countries-server/compare/countries-server-workspace-v1.0.1...countries-server-workspace-v1.0.2) (2025-03-06)
 
 
