@@ -85,8 +85,8 @@ importers:
         specifier: 16.10.0
         version: 16.10.0
       graphql-yoga:
-        specifier: 5.13.1
-        version: 5.13.1(graphql@16.10.0)
+        specifier: 5.13.2
+        version: 5.13.2(graphql@16.10.0)
       h3:
         specifier: 1.15.1
         version: 1.15.1
@@ -1603,8 +1603,8 @@ packages:
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
 
-  graphql-yoga@5.13.1:
-    resolution: {integrity: sha512-djkKskQlQu9Vk/1KyRxfwEOJgUnNTnutb0PLMIQvyTcR8sJF6vGORvNSRx8c4H32jqVTiLQNdhmwAhLpbcnhqQ==}
+  graphql-yoga@5.13.2:
+    resolution: {integrity: sha512-ZXhIoAPCV2K2ozwpxDL1ZXhhI2SvIp3hJMaSRaHcojLGE9w9iV8oYGPnZKcV5eisF3VE13RcIF4Ys6TTkU338Q==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       graphql: ^15.2.0 || ^16.0.0
@@ -4222,7 +4222,7 @@ snapshots:
 
   graphemer@1.4.0: {}
 
-  graphql-yoga@5.13.1(graphql@16.10.0):
+  graphql-yoga@5.13.2(graphql@16.10.0):
     dependencies:
       '@envelop/core': 5.2.3
       '@envelop/instrumentation': 1.0.0
