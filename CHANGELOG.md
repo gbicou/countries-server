@@ -6,6 +6,14 @@
 * **release:** docker metadata semver and pr ([52c247a](https://github.com/gbicou/countries-server/commit/52c247a34d4df7b44e2cda14ef9cb4eecea8024e))
 * **release:** publish to github container registry ([070520d](https://github.com/gbicou/countries-server/commit/070520d41d8bbd720e3c88734e131f1cfd881d05))
 
+## [1.0.4](https://github.com/gbicou/countries-server/compare/countries-server-workspace-v1.0.3...countries-server-workspace-v1.0.4) (2025-03-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency graphql-yoga to v5.13.2 ([#346](https://github.com/gbicou/countries-server/issues/346)) ([d9c883f](https://github.com/gbicou/countries-server/commit/d9c883f6dd7685d5ddebb28a79c42925b67c3ac9))
+* **deps:** update dependency nitropack to v2.11.7 ([#348](https://github.com/gbicou/countries-server/issues/348)) ([bdf7765](https://github.com/gbicou/countries-server/commit/bdf77656c1e89fda2ea4c9e13bf21b4b35b885dd))
+
 ## [1.0.3](https://github.com/gbicou/countries-server/compare/countries-server-workspace-v1.0.2...countries-server-workspace-v1.0.3) (2025-03-13)
 
 
