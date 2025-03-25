@@ -61,7 +61,7 @@ importers:
         version: link:../data
       '@pothos/core':
         specifier: ^4.3.0
-        version: 4.5.0(graphql@16.10.0)
+        version: 4.5.1(graphql@16.10.0)
     devDependencies:
       '@private/eslint-config':
         specifier: workspace:*
@@ -713,8 +713,8 @@ packages:
     resolution: {integrity: sha512-WLneXKQYNClhaMXccO111VQmZahSrcSRDaHRbV6KL5R4pTvK87fMn/MXLUcvOjk0X5dTHDPKF61tM7j826wrjQ==}
     engines: {node: '>=20.6.0'}
 
-  '@pothos/core@4.5.0':
-    resolution: {integrity: sha512-OBktnbaTkcS3pZMGCC2375tNSypsvVRP2SJSjN0VW9MXlJFP9+2lZTNeKyGFndTH5QLbxoLUe3nUSVdkBHMLzA==}
+  '@pothos/core@4.5.1':
+    resolution: {integrity: sha512-zGjgeKy9IWMtqW5lmYuRmxHJegM+O545cSVrcfLEj1i3eRX9ee8ae/2JQGjyN1N2Dd57MVoelr/aN/wjJcW/GA==}
     peerDependencies:
       graphql: '>=16.6.0'
 
@@ -3421,7 +3421,7 @@ snapshots:
 
   '@poppinss/exception@1.2.0': {}
 
-  '@pothos/core@4.5.0(graphql@16.10.0)':
+  '@pothos/core@4.5.1(graphql@16.10.0)':
     dependencies:
       graphql: 16.10.0
 
