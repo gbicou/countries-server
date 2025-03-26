@@ -10,7 +10,7 @@ A GraphQL countries server toy project
 
 ## Technologies
 
-Written in Typescript, packaged with pnpm + nx
+Written in Typescript, packaged with pnpm + turbo
 
 | Role           | Name         | Link                                      |
 |----------------|--------------|-------------------------------------------|
