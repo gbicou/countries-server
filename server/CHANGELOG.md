@@ -1,5 +1,14 @@
 # @bicou/countries-server
 
+## [1.6.3](https://github.com/gbicou/countries-server/compare/countries-server-v1.6.2...countries-server-v1.6.3) (2025-04-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependency graphql-yoga to v5.13.2 ([#346](https://github.com/gbicou/countries-server/issues/346)) ([d9c883f](https://github.com/gbicou/countries-server/commit/d9c883f6dd7685d5ddebb28a79c42925b67c3ac9))
+* **deps:** update dependency nitropack to v2.11.7 ([#348](https://github.com/gbicou/countries-server/issues/348)) ([bdf7765](https://github.com/gbicou/countries-server/commit/bdf77656c1e89fda2ea4c9e13bf21b4b35b885dd))
+* **deps:** update dependency nitropack to v2.11.8 ([#359](https://github.com/gbicou/countries-server/issues/359)) ([9cfa59f](https://github.com/gbicou/countries-server/commit/9cfa59f17bb033120a84fd128d9fd310a0196b11))
+
 ## [1.6.2](https://github.com/gbicou/countries-server/compare/countries-server-v1.6.1...countries-server-v1.6.2) (2025-03-13)
 
 
