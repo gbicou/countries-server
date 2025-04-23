@@ -6,6 +6,16 @@
 * **release:** docker metadata semver and pr ([52c247a](https://github.com/gbicou/countries-server/commit/52c247a34d4df7b44e2cda14ef9cb4eecea8024e))
 * **release:** publish to github container registry ([070520d](https://github.com/gbicou/countries-server/commit/070520d41d8bbd720e3c88734e131f1cfd881d05))
 
+## [1.0.5](https://github.com/gbicou/countries-server/compare/countries-server-workspace-v1.0.4...countries-server-workspace-v1.0.5) (2025-04-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @pothos/core to v4.6.0 ([#384](https://github.com/gbicou/countries-server/issues/384)) ([1c897e2](https://github.com/gbicou/countries-server/commit/1c897e254ee0d38aa1589f0e7718cd20732b8982))
+* **deps:** update dependency graphql-yoga to v5.13.3 ([#374](https://github.com/gbicou/countries-server/issues/374)) ([acd20c2](https://github.com/gbicou/countries-server/commit/acd20c230ae988009bba2a7931db0730a2ad6a1e))
+* **deps:** update dependency graphql-yoga to v5.13.4 ([#381](https://github.com/gbicou/countries-server/issues/381)) ([fd5b0e5](https://github.com/gbicou/countries-server/commit/fd5b0e505abc1d54352f0b0906a618e771d68045))
+* **deps:** update dependency nitropack to v2.11.9 ([#376](https://github.com/gbicou/countries-server/issues/376)) ([d871fff](https://github.com/gbicou/countries-server/commit/d871fff72cc6c0f466174e45943b323fbedc3306))
+
 ## [1.0.4](https://github.com/gbicou/countries-server/compare/countries-server-workspace-v1.0.3...countries-server-workspace-v1.0.4) (2025-04-04)
 
 
