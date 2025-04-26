@@ -61,7 +61,7 @@ importers:
         version: link:../data
       '@pothos/core':
         specifier: ^4.3.0
-        version: 4.6.0(graphql@16.10.0)
+        version: 4.6.0(graphql@16.11.0)
     devDependencies:
       '@private/eslint-config':
         specifier: workspace:*
@@ -70,8 +70,8 @@ importers:
         specifier: 9.25.1
         version: 9.25.1(jiti@2.4.2)
       graphql:
-        specifier: 16.10.0
-        version: 16.10.0
+        specifier: 16.11.0
+        version: 16.11.0
       tsup:
         specifier: 8.4.0
         version: 8.4.0(jiti@2.4.2)(tsx@4.19.3)(typescript@5.8.3)(yaml@2.4.3)
@@ -82,11 +82,11 @@ importers:
         specifier: workspace:*
         version: link:../schema
       graphql:
-        specifier: 16.10.0
-        version: 16.10.0
+        specifier: 16.11.0
+        version: 16.11.0
       graphql-yoga:
         specifier: 5.13.4
-        version: 5.13.4(graphql@16.10.0)
+        version: 5.13.4(graphql@16.11.0)
       h3:
         specifier: 1.15.1
         version: 1.15.1
@@ -1741,8 +1741,8 @@ packages:
     peerDependencies:
       graphql: ^15.2.0 || ^16.0.0
 
-  graphql@16.10.0:
-    resolution: {integrity: sha512-AjqGKbDGUFRKIRCP9tCKiIGHyriz2oHEbPIbEtcSLSs4YjReZOIPQQWek4+6hjw62H9QShXHyaGivGiYVLeYFQ==}
+  graphql@16.11.0:
+    resolution: {integrity: sha512-mS1lbMsxgQj6hge1XZ6p7GPhbrtFwUFYi3wRzXAC/FmYnyXMTvvI3td3rjmQ2u8ewXueaSvRPWaEcgVVOT9Jnw==}
     engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
 
   gzip-size@7.0.0:
@@ -3161,41 +3161,41 @@ snapshots:
 
   '@fastify/busboy@3.1.1': {}
 
-  '@graphql-tools/executor@1.4.0(graphql@16.10.0)':
+  '@graphql-tools/executor@1.4.0(graphql@16.11.0)':
     dependencies:
-      '@graphql-tools/utils': 10.8.1(graphql@16.10.0)
-      '@graphql-typed-document-node/core': 3.2.0(graphql@16.10.0)
+      '@graphql-tools/utils': 10.8.1(graphql@16.11.0)
+      '@graphql-typed-document-node/core': 3.2.0(graphql@16.11.0)
       '@repeaterjs/repeater': 3.0.6
       '@whatwg-node/disposablestack': 0.0.5
-      graphql: 16.10.0
+      graphql: 16.11.0
       tslib: 2.8.1
       value-or-promise: 1.0.12
 
-  '@graphql-tools/merge@9.0.13(graphql@16.10.0)':
+  '@graphql-tools/merge@9.0.13(graphql@16.11.0)':
     dependencies:
-      '@graphql-tools/utils': 10.8.1(graphql@16.10.0)
-      graphql: 16.10.0
+      '@graphql-tools/utils': 10.8.1(graphql@16.11.0)
+      graphql: 16.11.0
       tslib: 2.8.1
 
-  '@graphql-tools/schema@10.0.12(graphql@16.10.0)':
+  '@graphql-tools/schema@10.0.12(graphql@16.11.0)':
     dependencies:
-      '@graphql-tools/merge': 9.0.13(graphql@16.10.0)
-      '@graphql-tools/utils': 10.8.1(graphql@16.10.0)
-      graphql: 16.10.0
+      '@graphql-tools/merge': 9.0.13(graphql@16.11.0)
+      '@graphql-tools/utils': 10.8.1(graphql@16.11.0)
+      graphql: 16.11.0
       tslib: 2.8.1
       value-or-promise: 1.0.12
 
-  '@graphql-tools/utils@10.8.1(graphql@16.10.0)':
+  '@graphql-tools/utils@10.8.1(graphql@16.11.0)':
     dependencies:
-      '@graphql-typed-document-node/core': 3.2.0(graphql@16.10.0)
+      '@graphql-typed-document-node/core': 3.2.0(graphql@16.11.0)
       cross-inspect: 1.0.1
       dset: 3.1.4
-      graphql: 16.10.0
+      graphql: 16.11.0
       tslib: 2.8.1
 
-  '@graphql-typed-document-node/core@3.2.0(graphql@16.10.0)':
+  '@graphql-typed-document-node/core@3.2.0(graphql@16.11.0)':
     dependencies:
-      graphql: 16.10.0
+      graphql: 16.11.0
 
   '@graphql-yoga/logger@2.0.1':
     dependencies:
@@ -3374,9 +3374,9 @@ snapshots:
 
   '@poppinss/exception@1.2.0': {}
 
-  '@pothos/core@4.6.0(graphql@16.10.0)':
+  '@pothos/core@4.6.0(graphql@16.11.0)':
     dependencies:
-      graphql: 16.10.0
+      graphql: 16.11.0
 
   '@repeaterjs/repeater@3.0.6': {}
 
@@ -4383,24 +4383,24 @@ snapshots:
 
   graphemer@1.4.0: {}
 
-  graphql-yoga@5.13.4(graphql@16.10.0):
+  graphql-yoga@5.13.4(graphql@16.11.0):
     dependencies:
       '@envelop/core': 5.2.3
       '@envelop/instrumentation': 1.0.0
-      '@graphql-tools/executor': 1.4.0(graphql@16.10.0)
-      '@graphql-tools/schema': 10.0.12(graphql@16.10.0)
-      '@graphql-tools/utils': 10.8.1(graphql@16.10.0)
+      '@graphql-tools/executor': 1.4.0(graphql@16.11.0)
+      '@graphql-tools/schema': 10.0.12(graphql@16.11.0)
+      '@graphql-tools/utils': 10.8.1(graphql@16.11.0)
       '@graphql-yoga/logger': 2.0.1
       '@graphql-yoga/subscription': 5.0.5
       '@whatwg-node/fetch': 0.10.6
       '@whatwg-node/promise-helpers': 1.2.4
       '@whatwg-node/server': 0.10.5
       dset: 3.1.4
-      graphql: 16.10.0
+      graphql: 16.11.0
       lru-cache: 10.4.3
       tslib: 2.8.1
 
-  graphql@16.10.0: {}
+  graphql@16.11.0: {}
 
   gzip-size@7.0.0:
     dependencies:
