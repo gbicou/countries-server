@@ -27,7 +27,7 @@
     "graphql": "16.11.0",
     "graphql-yoga": "5.13.4",
     "h3": "1.15.1",
-    "nitropack": "2.11.9"
+    "nitropack": "2.11.10"
   },
   "devDependencies": {
     "@private/eslint-config": "workspace:*",
