@@ -6,6 +6,17 @@
 * **release:** docker metadata semver and pr ([52c247a](https://github.com/gbicou/countries-server/commit/52c247a34d4df7b44e2cda14ef9cb4eecea8024e))
 * **release:** publish to github container registry ([070520d](https://github.com/gbicou/countries-server/commit/070520d41d8bbd720e3c88734e131f1cfd881d05))
 
+## [1.0.6](https://github.com/gbicou/countries-server/compare/countries-server-workspace-v1.0.5...countries-server-workspace-v1.0.6) (2025-04-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @pothos/core to v4.6.1 ([#403](https://github.com/gbicou/countries-server/issues/403)) ([b236f1c](https://github.com/gbicou/countries-server/commit/b236f1c1f147bdb9ed85cbeea95a08e2c005c968))
+* **deps:** update dependency graphql to v16.11.0 ([#393](https://github.com/gbicou/countries-server/issues/393)) ([fb8a8f9](https://github.com/gbicou/countries-server/commit/fb8a8f922aa7fd376d7f36e58a039c5cc20cc29e))
+* **deps:** update dependency h3 to v1.15.3 ([#395](https://github.com/gbicou/countries-server/issues/395)) ([961057d](https://github.com/gbicou/countries-server/commit/961057de03ef27627999ca86fa20d04ffa6d106e))
+* **deps:** update dependency nitropack to v2.11.10 ([#396](https://github.com/gbicou/countries-server/issues/396)) ([01a1314](https://github.com/gbicou/countries-server/commit/01a131422abe2ef36fb06372accc386e827c393a))
+* **deps:** update dependency nitropack to v2.11.11 ([#400](https://github.com/gbicou/countries-server/issues/400)) ([6d1e188](https://github.com/gbicou/countries-server/commit/6d1e18888ec668b37cbdb77a58fc0f8fddb2b33b))
+
 ## [1.0.5](https://github.com/gbicou/countries-server/compare/countries-server-workspace-v1.0.4...countries-server-workspace-v1.0.5) (2025-04-22)
 
 
