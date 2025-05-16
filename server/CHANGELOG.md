@@ -1,5 +1,12 @@
 # @bicou/countries-server
 
+## [1.6.6](https://github.com/gbicou/countries-server/compare/countries-server-v1.6.5...countries-server-v1.6.6) (2025-05-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency nitropack to v2.11.12 ([#416](https://github.com/gbicou/countries-server/issues/416)) ([86711a8](https://github.com/gbicou/countries-server/commit/86711a8f48f4185e7523abddf56d6ab6ce2df3a3))
+
 ## [1.6.5](https://github.com/gbicou/countries-server/compare/countries-server-v1.6.4...countries-server-v1.6.5) (2025-04-30)
 
 
