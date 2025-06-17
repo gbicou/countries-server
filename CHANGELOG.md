@@ -6,6 +6,15 @@
 * **release:** docker metadata semver and pr ([52c247a](https://github.com/gbicou/countries-server/commit/52c247a34d4df7b44e2cda14ef9cb4eecea8024e))
 * **release:** publish to github container registry ([070520d](https://github.com/gbicou/countries-server/commit/070520d41d8bbd720e3c88734e131f1cfd881d05))
 
+## [1.0.7](https://github.com/gbicou/countries-server/compare/countries-server-workspace-v1.0.6...countries-server-workspace-v1.0.7) (2025-06-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @pothos/core to v4.6.2 ([#404](https://github.com/gbicou/countries-server/issues/404)) ([28dd4b6](https://github.com/gbicou/countries-server/commit/28dd4b6d38d8618da44521e75ad81a50ee648767))
+* **deps:** update dependency graphql-yoga to v5.13.5 ([#427](https://github.com/gbicou/countries-server/issues/427)) ([7d1a819](https://github.com/gbicou/countries-server/commit/7d1a819dfb8e3ab5231946eeb2780af264498cd5))
+* **deps:** update dependency nitropack to v2.11.12 ([#416](https://github.com/gbicou/countries-server/issues/416)) ([86711a8](https://github.com/gbicou/countries-server/commit/86711a8f48f4185e7523abddf56d6ab6ce2df3a3))
+
 ## [1.0.6](https://github.com/gbicou/countries-server/compare/countries-server-workspace-v1.0.5...countries-server-workspace-v1.0.6) (2025-04-30)
 
 
