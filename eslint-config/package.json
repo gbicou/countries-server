@@ -17,6 +17,6 @@
     "@stylistic/eslint-plugin": "5.1.0",
     "eslint-plugin-jsdoc": "51.2.3",
     "eslint-plugin-unicorn": "59.0.1",
-    "typescript-eslint": "8.35.0"
+    "typescript-eslint": "8.35.1"
   }
 }
