@@ -16,7 +16,7 @@
     "lint": "turbo lint"
   },
   "devDependencies": {
-    "@types/node": "22.16.0",
+    "@types/node": "22.18.8",
     "turbo": "2.5.8",
     "typescript": "5.8.3"
   },
