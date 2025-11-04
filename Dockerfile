@@ -1,4 +1,4 @@
-FROM node:22-slim AS build-env
+FROM node:24-slim AS build-env
 
 COPY . /app
 WORKDIR /app
