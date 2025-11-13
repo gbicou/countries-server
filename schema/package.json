@@ -49,7 +49,7 @@
     "@private/eslint-config": "workspace:*",
     "eslint": "9.39.1",
     "graphql": "16.12.0",
-    "tsup": "8.5.0"
+    "tsup": "8.5.1"
   },
   "peerDependencies": {
     "graphql": "^16.10.0"
