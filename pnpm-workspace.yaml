@@ -3,3 +3,8 @@ packages:
   - schema
   - server
   - eslint-config
+
+gitBranchLockfile: true
+mergeGitBranchLockfilesBranchPattern:
+  - main
+  - release-please--*
