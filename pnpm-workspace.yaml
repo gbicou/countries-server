@@ -3,8 +3,20 @@ packages:
   - schema
   - server
   - eslint-config
-
 gitBranchLockfile: true
 mergeGitBranchLockfilesBranchPattern:
   - main
   - release-please--*
+catalog:
+  "@eslint/js": 9.39.1
+  "@stylistic/eslint-plugin": 5.5.0
+  "@types/node": 24.10.1
+  eslint: 9.39.1
+  eslint-plugin-jsdoc: 61.2.0
+  eslint-plugin-unicorn: 62.0.0
+  graphql: 16.12.0
+  tsup: 8.5.0
+  tsx: 4.20.6
+  turbo: 2.6.1
+  typescript: 5.9.3
+  typescript-eslint: 8.46.4

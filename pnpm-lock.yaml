@@ -4,18 +4,57 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+catalogs:
+  default:
+    '@eslint/js':
+      specifier: 9.39.1
+      version: 9.39.1
+    '@stylistic/eslint-plugin':
+      specifier: 5.5.0
+      version: 5.5.0
+    '@types/node':
+      specifier: 24.10.1
+      version: 24.10.1
+    eslint:
+      specifier: 9.39.1
+      version: 9.39.1
+    eslint-plugin-jsdoc:
+      specifier: 61.2.0
+      version: 61.2.0
+    eslint-plugin-unicorn:
+      specifier: 62.0.0
+      version: 62.0.0
+    graphql:
+      specifier: 16.12.0
+      version: 16.12.0
+    tsup:
+      specifier: 8.5.0
+      version: 8.5.0
+    tsx:
+      specifier: 4.20.6
+      version: 4.20.6
+    turbo:
+      specifier: 2.6.1
+      version: 2.6.1
+    typescript:
+      specifier: 5.9.3
+      version: 5.9.3
+    typescript-eslint:
+      specifier: 8.46.4
+      version: 8.46.4
+
 importers:
 
   .:
     devDependencies:
       '@types/node':
-        specifier: 24.10.1
+        specifier: 'catalog:'
         version: 24.10.1
       turbo:
-        specifier: 2.6.1
+        specifier: 'catalog:'
         version: 2.6.1
       typescript:
-        specifier: 5.9.3
+        specifier: 'catalog:'
         version: 5.9.3
 
   data:
@@ -24,34 +63,34 @@ importers:
         specifier: workspace:*
         version: link:../eslint-config
       eslint:
-        specifier: 9.39.1
+        specifier: 'catalog:'
         version: 9.39.1(jiti@2.6.1)
       tsup:
-        specifier: 8.5.0
+        specifier: 'catalog:'
         version: 8.5.0(jiti@2.6.1)(postcss@8.5.6)(tsx@4.20.6)(typescript@5.9.3)(yaml@2.4.3)
       tsx:
-        specifier: 4.20.6
+        specifier: 'catalog:'
         version: 4.20.6
 
   eslint-config:
     devDependencies:
       '@eslint/js':
-        specifier: 9.39.1
+        specifier: 'catalog:'
         version: 9.39.1
       '@stylistic/eslint-plugin':
-        specifier: 5.5.0
+        specifier: 'catalog:'
         version: 5.5.0(eslint@9.39.1(jiti@2.6.1))
       eslint:
-        specifier: 9.39.1
+        specifier: 'catalog:'
         version: 9.39.1(jiti@2.6.1)
       eslint-plugin-jsdoc:
-        specifier: 61.2.0
+        specifier: 'catalog:'
         version: 61.2.0(eslint@9.39.1(jiti@2.6.1))
       eslint-plugin-unicorn:
-        specifier: 62.0.0
+        specifier: 'catalog:'
         version: 62.0.0(eslint@9.39.1(jiti@2.6.1))
       typescript-eslint:
-        specifier: 8.46.4
+        specifier: 'catalog:'
         version: 8.46.4(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
 
   schema:
@@ -67,13 +106,13 @@ importers:
         specifier: workspace:*
         version: link:../eslint-config
       eslint:
-        specifier: 9.39.1
+        specifier: 'catalog:'
         version: 9.39.1(jiti@2.6.1)
       graphql:
-        specifier: 16.12.0
+        specifier: 'catalog:'
         version: 16.12.0
       tsup:
-        specifier: 8.5.0
+        specifier: 'catalog:'
         version: 8.5.0(jiti@2.6.1)(postcss@8.5.6)(tsx@4.20.6)(typescript@5.9.3)(yaml@2.4.3)
 
   server:
@@ -82,7 +121,7 @@ importers:
         specifier: workspace:*
         version: link:../schema
       graphql:
-        specifier: 16.12.0
+        specifier: 'catalog:'
         version: 16.12.0
       graphql-yoga:
         specifier: 5.16.2
@@ -98,7 +137,7 @@ importers:
         specifier: workspace:*
         version: link:../eslint-config
       eslint:
-        specifier: 9.39.1
+        specifier: 'catalog:'
         version: 9.39.1(jiti@2.6.1)
 
 packages:
