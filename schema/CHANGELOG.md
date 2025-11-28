@@ -1,5 +1,12 @@
 # @bicou/countries-server-schema
 
+## [1.7.2](https://github.com/gbicou/countries-server/compare/countries-server-schema-v1.7.1...countries-server-schema-v1.7.2) (2025-11-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency graphql to v16.12.0 ([#499](https://github.com/gbicou/countries-server/issues/499)) ([034c0d7](https://github.com/gbicou/countries-server/commit/034c0d7fa0a0390b389f16713976c32ac304660e))
+
 ## [1.7.1](https://github.com/gbicou/countries-server/compare/countries-server-schema-v1.7.0...countries-server-schema-v1.7.1) (2025-04-30)
 
 
