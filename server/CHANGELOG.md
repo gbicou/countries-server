@@ -1,5 +1,12 @@
 # @bicou/countries-server
 
+## [1.6.7](https://github.com/gbicou/countries-server/compare/countries-server-v1.6.6...countries-server-v1.6.7) (2025-12-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency graphql-yoga to v5.17.1 ([#518](https://github.com/gbicou/countries-server/issues/518)) ([a88a899](https://github.com/gbicou/countries-server/commit/a88a89958ebcbf0b4d0674e938585f28ee772d8a))
+
 ## [1.6.6](https://github.com/gbicou/countries-server/compare/countries-server-v1.6.5...countries-server-v1.6.6) (2025-11-28)
 
 
