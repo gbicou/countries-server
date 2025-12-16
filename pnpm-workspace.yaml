@@ -8,10 +8,10 @@ mergeGitBranchLockfilesBranchPattern:
   - main
   - release-please--*
 catalog:
-  "@eslint/js": 9.39.1
+  "@eslint/js": 9.39.2
   "@stylistic/eslint-plugin": 5.6.1
   "@types/node": 24.10.4
-  eslint: 9.39.1
+  eslint: 9.39.2
   eslint-plugin-jsdoc: 61.5.0
   eslint-plugin-unicorn: 62.0.0
   graphql: 16.12.0
