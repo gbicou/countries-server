@@ -26,7 +26,7 @@
     "@bicou/countries-server-schema": "workspace:*",
     "graphql": "catalog:",
     "graphql-yoga": "5.18.0",
-    "h3": "1.15.4",
+    "h3": "1.15.5",
     "nitropack": "2.12.9"
   },
   "devDependencies": {
