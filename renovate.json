@@ -1,1 +1,1 @@
-{\n  "$schema": "https://docs.renovatebot.com/renovate-schema.json",\n  "extends": [\n    "config:best-practices"\n  ],\n  "postUpdateOptions": ["pnpmDedupe"]\n}
+{"$schema": "https://docs.renovatebot.com/renovate-schema.json", "extends": [ "config:best-practices"], "postUpdateOptions": ["pnpmDedupe"]}
