@@ -1,6 +1,6 @@
 {
   "name": "@bicou/countries-server",
-  "version": "1.6.6",
+  "version": "1.6.7",
   "description": "graphql sample server",
   "homepage": "https://github.com/gbicou/countries-server",
   "keywords": [
