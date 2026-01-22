@@ -3,14 +3,11 @@ packages:
   - schema
   - server
   - eslint-config
-gitBranchLockfile: true
-mergeGitBranchLockfilesBranchPattern:
-  - main
-  - release-please--*
+
 catalog:
-  "@eslint/js": 9.39.2
-  "@stylistic/eslint-plugin": 5.7.0
-  "@types/node": 24.10.9
+  '@eslint/js': 9.39.2
+  '@stylistic/eslint-plugin': 5.7.0
+  '@types/node': 24.10.9
   eslint: 9.39.2
   eslint-plugin-jsdoc: 62.1.0
   eslint-plugin-unicorn: 62.0.0
@@ -20,3 +17,9 @@ catalog:
   turbo: 2.7.5
   typescript: 5.9.3
   typescript-eslint: 8.53.0
+
+gitBranchLockfile: true
+
+mergeGitBranchLockfilesBranchPattern:
+  - main
+  - release-please--*
