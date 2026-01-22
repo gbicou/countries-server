@@ -12,7 +12,7 @@ catalog:
   "@stylistic/eslint-plugin": 5.6.1
   "@types/node": 24.10.9
   eslint: 9.39.2
-  eslint-plugin-jsdoc: 61.5.0
+  eslint-plugin-jsdoc: 61.7.1
   eslint-plugin-unicorn: 62.0.0
   graphql: 16.12.0
   tsup: 8.5.1
