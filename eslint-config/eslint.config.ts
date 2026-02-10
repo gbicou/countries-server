@@ -1,11 +1,11 @@
-/* eslint-env node */
+import { defineConfig } from 'eslint/config'
 import js from '@eslint/js'
 import ts from 'typescript-eslint'
 import unicorn from 'eslint-plugin-unicorn'
 import jsdoc from 'eslint-plugin-jsdoc'
 import stylistic from '@stylistic/eslint-plugin'
 
-export default [
+export default defineConfig(
   {
     ignores: ['dist/', '.turbo/', '.nitro/', '.output/'],
   },
@@ -20,7 +20,7 @@ export default [
   },
 
   // typescript
-  ...ts.configs.recommended,
+  ts.configs.recommended,
   {
     rules: {
       // "@typescript-eslint/no-unused-vars": "warn",
@@ -29,7 +29,7 @@ export default [
   },
 
   // unicorn
-  unicorn.configs['flat/recommended'],
+  unicorn.configs.recommended,
   {
     rules: {
       // "unicon/no-unused-vars": "warn",
@@ -45,5 +45,5 @@ export default [
   },
 
   // stylistic
-  stylistic.configs['recommended-flat'],
-]
+  stylistic.configs.recommended,
+)

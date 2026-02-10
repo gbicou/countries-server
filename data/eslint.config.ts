@@ -1,10 +1,9 @@
-/* eslint-env node */
-
 import local from '@private/eslint-config'
+import { defineConfig } from 'eslint/config'
 
-export default [
+export default defineConfig([
   {
     ignores: ['src/countries.ts'],
   },
   ...local,
-]
+])
