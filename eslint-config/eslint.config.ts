@@ -5,7 +5,7 @@ import unicorn from 'eslint-plugin-unicorn'
 import jsdoc from 'eslint-plugin-jsdoc'
 import stylistic from '@stylistic/eslint-plugin'
 
-export default defineConfig([
+export default defineConfig(
   {
     ignores: ['dist/', '.turbo/', '.nitro/', '.output/'],
   },
@@ -20,7 +20,7 @@ export default defineConfig([
   },
 
   // typescript
-  ...ts.configs.recommended,
+  ts.configs.recommended,
   {
     rules: {
       // "@typescript-eslint/no-unused-vars": "warn",
@@ -46,4 +46,4 @@ export default defineConfig([
 
   // stylistic
   stylistic.configs.recommended,
-])
+)
