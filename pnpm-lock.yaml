@@ -19,8 +19,8 @@ catalogs:
       specifier: 10.0.0
       version: 10.0.0
     eslint-plugin-jsdoc:
-      specifier: 62.5.3
-      version: 62.5.3
+      specifier: 62.5.4
+      version: 62.5.4
     eslint-plugin-unicorn:
       specifier: 62.0.0
       version: 62.0.0
@@ -85,7 +85,7 @@ importers:
         version: 10.0.0(jiti@2.6.1)
       eslint-plugin-jsdoc:
         specifier: 'catalog:'
-        version: 62.5.3(eslint@10.0.0(jiti@2.6.1))
+        version: 62.5.4(eslint@10.0.0(jiti@2.6.1))
       eslint-plugin-unicorn:
         specifier: 'catalog:'
         version: 62.0.0(eslint@10.0.0(jiti@2.6.1))
@@ -1393,8 +1393,8 @@ packages:
     resolution: {integrity: sha512-/veY75JbMK4j1yjvuUxuVsiS/hr/4iHs9FTT6cgTexxdE0Ly/glccBAkloH/DofkjRbZU3bnoj38mOmhkZ0lHw==}
     engines: {node: '>=12'}
 
-  eslint-plugin-jsdoc@62.5.3:
-    resolution: {integrity: sha512-wWUrEG9ACexVAg95gH0t0LobV5t4sAnwephEsp95Wv7y6s7Fc6DK3xBeLKi7imVpbSzdcyfo863bKCNYL8ld0g==}
+  eslint-plugin-jsdoc@62.5.4:
+    resolution: {integrity: sha512-U+Q5ppErmC17VFQl542eBIaXcuq975BzoIHBXyx7UQx/i4gyHXxPiBkonkuxWyFA98hGLALLUuD+NJcXqSGKxg==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0 || ^9.0.0
@@ -3922,7 +3922,7 @@ snapshots:
 
   escape-string-regexp@5.0.0: {}
 
-  eslint-plugin-jsdoc@62.5.3(eslint@10.0.0(jiti@2.6.1)):
+  eslint-plugin-jsdoc@62.5.4(eslint@10.0.0(jiti@2.6.1)):
     dependencies:
       '@es-joy/jsdoccomment': 0.84.0
       '@es-joy/resolve.exports': 1.2.0
