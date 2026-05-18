@@ -11,7 +11,7 @@ catalog:
   eslint: 10.2.1
   eslint-plugin-jsdoc: 62.9.0
   eslint-plugin-unicorn: 64.0.0
-  graphql: 16.13.2
+  graphql: 16.14.0
   tsup: 8.5.1
   tsx: 4.21.0
   turbo: 2.9.9
