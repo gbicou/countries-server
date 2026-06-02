@@ -7,7 +7,7 @@ packages:
 catalog:
   '@eslint/js': 10.0.1
   '@stylistic/eslint-plugin': 5.10.0
-  '@types/node': 24.12.2
+  '@types/node': 24.12.4
   eslint: 10.2.1
   eslint-plugin-jsdoc: 62.9.0
   eslint-plugin-unicorn: 64.0.0
