@@ -4,6 +4,10 @@ packages:
   - server
   - eslint-config
 
+allowBuilds:
+  '@parcel/watcher': true
+  esbuild: true
+
 catalog:
   '@eslint/js': 10.0.1
   '@stylistic/eslint-plugin': 5.7.1
