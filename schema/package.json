@@ -13,32 +13,19 @@
   "repository": "github:gbicou/countries-server",
   "type": "module",
   "exports": {
-    ".": {
-      "import": "./dist/schema.js",
-      "require": "./dist/schema.cjs"
-    }
+    ".": "./dist/schema.mjs",
+    "./package.json": "./package.json"
   },
-  "main": "./dist/schema.cjs",
-  "types": "./dist/schema.d.ts",
+  "main": "./dist/schema.mjs",
+  "module": "./dist/schema.mjs",
+  "types": "./dist/schema.d.mts",
   "files": [
     "dist",
     "src"
   ],
-  "tsup": {
-    "entry": [
-      "src/schema.ts"
-    ],
-    "format": [
-      "esm",
-      "cjs"
-    ],
-    "dts": true,
-    "clean": true
-  },
   "scripts": {
-    "dev": "tsup --watch",
-    "stub": "tsup --dts-only",
-    "build": "tsup --minify",
+    "dev": "tsdown --watch",
+    "build": "tsdown",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -49,7 +36,7 @@
     "@private/eslint-config": "workspace:*",
     "eslint": "catalog:",
     "graphql": "catalog:",
-    "tsup": "catalog:"
+    "tsdown": "catalog:"
   },
   "peerDependencies": {
     "graphql": "^16.10.0"

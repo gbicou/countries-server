@@ -11,38 +11,25 @@
   "license": "MIT",
   "repository": "github:gbicou/countries-server",
   "type": "module",
+  "main": "./dist/countries.mjs",
+  "module": "./dist/countries.mjs",
+  "types": "./dist/countries.d.mts",
   "exports": {
-    ".": {
-      "import": "./dist/countries.js",
-      "require": "./dist/countries.cjs"
-    }
+    ".": "./dist/countries.mjs",
+    "./package.json": "./package.json"
   },
-  "main": "./dist/countries.cjs",
-  "types": "./dist/countries.d.ts",
   "files": [
     "dist",
     "src"
   ],
-  "tsup": {
-    "entry": [
-      "src/countries.ts"
-    ],
-    "format": [
-      "esm",
-      "cjs"
-    ],
-    "dts": true,
-    "clean": true
-  },
   "devDependencies": {
     "@private/eslint-config": "workspace:*",
     "eslint": "catalog:",
-    "tsup": "catalog:"
+    "tsdown": "catalog:"
   },
   "scripts": {
-    "dev": "tsup --watch",
-    "stub": "tsup --dts-only",
-    "build": "tsup --minify",
+    "dev": "tsdown --watch",
+    "build": "tsdown",
     "build:countries": "node build-countries.ts",
     "lint": "eslint ."
   },
