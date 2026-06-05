@@ -1,6 +1,6 @@
 import SchemaBuilder from '@pothos/core'
 import { GraphQLSchema } from 'graphql'
-import { countries, GeoCountry } from '@bicou/countries-server-data'
+import { countries, type GeoCountry } from '@bicou/countries-server-data'
 
 // build schema with pothos
 const builder = new SchemaBuilder({})
