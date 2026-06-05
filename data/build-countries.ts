@@ -1,7 +1,7 @@
 import { createReadStream, createWriteStream } from 'node:fs'
 import { createInterface } from 'node:readline'
 import { once } from 'node:events'
-import { type GeoCountry } from './src/geo-country.js'
+import { type GeoCountry } from './src/geo-country.ts'
 
 const source = createWriteStream('src/countries.ts', { flags: 'w' })
 source.write('import { type GeoCountry } from "./geo-country.js";\n')

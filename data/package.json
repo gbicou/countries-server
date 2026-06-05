@@ -37,14 +37,13 @@
   "devDependencies": {
     "@private/eslint-config": "workspace:*",
     "eslint": "catalog:",
-    "tsup": "catalog:",
-    "tsx": "catalog:"
+    "tsup": "catalog:"
   },
   "scripts": {
     "dev": "tsup --watch",
     "stub": "tsup --dts-only",
     "build": "tsup --minify",
-    "build:countries": "tsx build-countries.ts",
+    "build:countries": "node build-countries.ts",
     "lint": "eslint ."
   },
   "publishConfig": {
