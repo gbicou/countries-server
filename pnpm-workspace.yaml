@@ -18,7 +18,7 @@ catalog:
   graphql: 16.14.0
   tsup: 8.5.1
   tsx: 4.22.3
-  turbo: 2.9.14
+  turbo: 2.9.16
   typescript: 5.9.3
   typescript-eslint: 8.60.0
 
