@@ -16,7 +16,7 @@ catalog:
   eslint-plugin-jsdoc: 63.0.1
   eslint-plugin-unicorn: 65.0.0
   graphql: 16.14.1
-  tsdown: 0.22.1
+  tsdown: 0.22.2
   turbo: 2.9.16
   typescript: 6.0.3
   typescript-eslint: 8.60.1
