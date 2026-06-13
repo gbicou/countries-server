@@ -22,8 +22,8 @@ catalogs:
       specifier: 63.0.2
       version: 63.0.2
     eslint-plugin-unicorn:
-      specifier: 65.0.0
-      version: 65.0.0
+      specifier: 65.0.1
+      version: 65.0.1
     graphql:
       specifier: 16.14.1
       version: 16.14.1
@@ -82,7 +82,7 @@ importers:
         version: 63.0.2(eslint@10.4.1(jiti@2.6.1))
       eslint-plugin-unicorn:
         specifier: 'catalog:'
-        version: 65.0.0(eslint@10.4.1(jiti@2.6.1))
+        version: 65.0.1(eslint@10.4.1(jiti@2.6.1))
       typescript-eslint:
         specifier: 'catalog:'
         version: 8.61.0(eslint@10.4.1(jiti@2.6.1))(typescript@6.0.3)
@@ -1576,8 +1576,8 @@ packages:
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0
 
-  eslint-plugin-unicorn@65.0.0:
-    resolution: {integrity: sha512-wE75x2QqMuPgZXcoc8LgTz7+gk5+SZK93Cxe6jkfouKp6+FwYwjMGrbYQTMRH8HK8X6jeTBhPPI2Cun923EMLQ==}
+  eslint-plugin-unicorn@65.0.1:
+    resolution: {integrity: sha512-daCrQrgxOoOz2uMPWB3Y3vvv/5q+ncwICI8IjoebiwtW87CaY4tAN5EEiRXTYVnf7qi1v1BGBdHOSnZLV0rx6A==}
     engines: {node: ^20.10.0 || >=21.0.0}
     peerDependencies:
       eslint: '>=9.38.0'
@@ -4169,7 +4169,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-unicorn@65.0.0(eslint@10.4.1(jiti@2.6.1)):
+  eslint-plugin-unicorn@65.0.1(eslint@10.4.1(jiti@2.6.1)):
     dependencies:
       '@babel/helper-validator-identifier': 7.28.5
       '@eslint-community/eslint-utils': 4.9.1(eslint@10.4.1(jiti@2.6.1))
