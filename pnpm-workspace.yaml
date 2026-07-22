@@ -13,7 +13,7 @@ catalog:
   '@stylistic/eslint-plugin': 5.10.0
   '@types/node': 24.13.2
   eslint: 10.5.0
-  eslint-plugin-jsdoc: 63.0.11
+  eslint-plugin-jsdoc: 63.2.0
   eslint-plugin-unicorn: 68.0.0
   graphql: 16.14.2
   tsdown: 0.22.3
