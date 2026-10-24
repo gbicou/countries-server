@@ -20,5 +20,5 @@
     "turbo": "catalog:",
     "typescript": "catalog:"
   },
-  "packageManager": "pnpm@11.28.5+sha512.484563d30b4c2ad27cb48aa94ff2b302dbcebc8ff6bf28816c2589886e146ce7f76f354f3bc1a438e6f5e9768c302aa0a6f7add8232903cd4cf81426cbc14d9e"
+  "packageManager": "pnpm@11.28.7+sha512.2161a30a2dc64b0c0f09786496fbce5f061be96b8ff11f0bc98e6bc675e0074ceb225b9197a278f2f171e6c9fb971bd1df8932e5bc31053baccdd52b15a1ae26"
 }
