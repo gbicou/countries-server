@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@bicou/countries-server-data": "workspace:*",
-    "@pothos/core": "^4.6.2"
+    "@pothos/core": "^4.16.0"
   },
   "devDependencies": {
     "@private/eslint-config": "workspace:*",
