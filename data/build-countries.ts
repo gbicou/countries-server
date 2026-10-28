@@ -10,22 +10,24 @@ source.write('export const countries: GeoCountry[] = [\n')
 
 const tsv = createInterface({
   input: createReadStream('countryInfo.txt'),
-  crlfDelay: Number.POSITIVE_INFINITY,
+  crlfDelay: Infinity,
 })
 
 tsv.on('line', (line) => {
-  if (line.length > 0 && !line.startsWith('#')) {
-    const data = line.split('\t')
-    const country: GeoCountry = {
-      'ISO': data[0],
-      'ISO3': data[1],
-      'ISO-Numeric': data[2],
-      'Country': data[4],
-      'tld': data[9],
-      'neighbours': (data[17].length > 0 && data[17].split(',')) || [],
-    }
-    source.write('\t' + JSON.stringify(country) + ',\n')
+  if (line.length === 0 || line.startsWith('#')) {
+    return
   }
+
+  const data = line.split('\t')
+  const country: GeoCountry = {
+    'ISO': data[0],
+    'ISO3': data[1],
+    'ISO-Numeric': data[2],
+    'Country': data[4],
+    'tld': data[9],
+    'neighbours': (data[17].length > 0 && data[17].split(',')) || [],
+  }
+  source.write('\t' + JSON.stringify(country) + ',\n')
 })
 
 await once(tsv, 'close')
