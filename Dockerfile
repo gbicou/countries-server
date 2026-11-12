@@ -11,7 +11,7 @@ ENV NODE_ENV=production
 
 RUN pnpm build
 
-FROM gcr.io/distroless/nodejs24-debian13@sha256:206cfbab1a64af20b63645150e3aa61b7babc17869e0254914947732963d6f07
+FROM gcr.io/distroless/nodejs24-debian13@sha256:24bc0fe0225c7518f202a822587dad74fe143b96326b81fe5cc08c1df8bed03e
 COPY --from=build-env --chown=nonroot:nonroot /app/server/.output/server /server
 WORKDIR /server
 
